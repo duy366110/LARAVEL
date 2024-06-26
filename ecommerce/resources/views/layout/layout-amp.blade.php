@@ -5,16 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async src="https://cdn.tailwindcss.com"></script>
         <title>Laravel</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        <!-- Styles -->
-        <style amp-custom>
+        <!-- Link styles -->
+        <link rel="stylesheet" href="{{asset("assets/css/commons/common-header.css")}}">
 
-        </style>
+        <!-- Styles -->
+        <style amp-custom></style>
 
         <!-- AMP styles and boilerplate code -->
         <style amp-boilerplate>
@@ -57,6 +59,9 @@
         </noscript>
     </head>
     <body class="amp-body-container">
-        @yield('content')
+        <div class="container-none">
+            @include('commons.common-header')
+            @yield('content')
+        </div>
     </body>
 </html>
