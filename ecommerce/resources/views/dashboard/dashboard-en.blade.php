@@ -1,5 +1,5 @@
 @extends("layout.layout-amp")
 
 @section("content")
-    <p>Dashboard component</p>
+    <div class="dashboard-banner">Banner component</div>
 @endsection

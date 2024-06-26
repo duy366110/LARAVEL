@@ -1,3 +1,7 @@
 .common-header-component {
     box-shadow: 0px 0px 1px 1px #0000001f;
 }
+
+.header-title-parent {
+    font-size: 1.15rem!important;
+}

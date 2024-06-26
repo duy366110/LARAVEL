@@ -11,5 +11,5 @@ Route::group(['prefix'=> 'vi'], function() {
 });
 
 Route::group(['prefix'=> 'en'], function() {
-    Route::get("/blog", [BlogEnController::class, "index"]);
+    Route::get("/blog", [BlogEnController::class, "index"])->name("en.blog");
 });

@@ -6,15 +6,19 @@
         <script async src="https://cdn.tailwindcss.com"></script>
         <title>Laravel</title>
 
+        <!-- Link styles -->
+        <link rel="stylesheet" href="{{asset("assets/css/styles.css")}}">
+        <link rel="stylesheet" href="{{asset("assets/css/commons/common-header.css")}}">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
 
         
     </head>
     <body class="common-body-container">
-        <div class="container-none">
-            @include('commons.common-header')
+        @include('commons.common-header')
+        <div class="container-none mx-5">
             @yield('content')
         </div>
     </body>
