@@ -8,14 +8,24 @@
     background-color: white;
     border: 1px solid var(--color-1);
     border-radius: 35px;
+    color: white;
+    padding: 5px 15px;
+}
+
+/* Btn hover */
+.common-hover-btn {
     color: var(--color-1);
     display: flex;
     font-weight: 500;
-    padding: 5px 15px;
     transition: all .3s ease;
 }
 
-.common-btn:hover {
+.common-hover-btn:hover {
     background-color: var(--color-1);
     color: white;
+}
+
+/* Btn normal */
+.common-normal-btn {
+    background-color: var(--color-1);
 }

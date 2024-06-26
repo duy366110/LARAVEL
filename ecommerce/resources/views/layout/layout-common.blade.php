@@ -18,7 +18,7 @@
     </head>
     <body class="common-body-container">
         @include('commons.common-header')
-        <div class="container-none mx-5">
+        <div class="container-none">
             @yield('content')
         </div>
     </body>

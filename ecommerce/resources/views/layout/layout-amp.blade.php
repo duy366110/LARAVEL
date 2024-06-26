@@ -16,6 +16,9 @@
         <link rel="stylesheet" href="{{asset("assets/css/styles.css")}}">
         <link rel="stylesheet" href="{{asset("assets/css/commons/common-header.css")}}">
 
+        <!-- Section link styles custom -->
+        @yield("section-link")
+
         <!-- Styles -->
         <style amp-custom></style>
 
@@ -61,7 +64,7 @@
     </head>
     <body class="amp-body-container">
         @include('commons.common-header')
-        <div class="container-none mx-5">
+        <div class="container-none">
             @yield('content')
         </div>
     </body>
