@@ -19,8 +19,28 @@
             <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Tài nguyên</a>
           </div>
 
-          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          <div class="header-language relative">
+            <div class="flex items-center gap-3">
+              <img class="w-10" src="{{asset("assets/images/flags/flag-vi.png")}}" alt="flag" />
+              <h2>Đổi ngôn ngữ</h2>
+            </div>
+            <ul class="language-items absolute hidden left-0 top-0 bg-white shadow w-full">
+              <li>
+                <a href="#">
+                  <img class="w-10" src="{{asset("assets/images/flags/flag-vi.png")}}" alt="flag" />
+                  <span>Tiếng việt</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="w-10" src="{{asset("assets/images/flags/flag-en.png")}}" alt="flag" />
+                  <span>English</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-auth">
+            <a class="common-btn" href="#">Đăng nhập</a>
           </div>
         </nav>
 

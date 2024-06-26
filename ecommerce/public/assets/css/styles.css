@@ -1,4 +1,21 @@
 :root {
-    --color-first: red;
-    --color-last: blue;
+    --color-1: rgb(11 100 60);
+    --color-2: #1ecc78;
+}
+
+/* Common button */
+.common-btn {
+    background-color: white;
+    border: 1px solid var(--color-1);
+    border-radius: 35px;
+    color: var(--color-1);
+    display: flex;
+    font-weight: 500;
+    padding: 5px 15px;
+    transition: all .3s ease;
+}
+
+.common-btn:hover {
+    background-color: var(--color-1);
+    color: white;
 }
