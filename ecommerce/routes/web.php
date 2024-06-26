@@ -1,19 +1,12 @@
 <?php
-
+use App\Http\Controllers\blog\BlogEnController;
+use App\Http\Controllers\blog\BlogViController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix'=> 'vi'], function() {
+    Route::get("/blog", [BlogViController::class, "index"]);
 });
 
-Route::get("/home", function () {
-    return "Home page";
-});
-
-Route::get("/house", function() {
-    return redirect("/home");
-});
-
-Route::get("/greet/{name}", function($name) {
-    return $name;
+Route::group(['prefix'=> 'en'], function() {
+    Route::get("/blog", [BlogEnController::class, "index"]);
 });
