@@ -127,17 +127,15 @@
                             <div>
                                 <h3>Tanca Vietnam</h3>
                                 <ul>
-                                    <li class="mb-4 flex">
-                                        <span class="phone-contact relative">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <span>
-                                        <a href="#"> 0899.1999.54</a>
+                                    <li class="mb-4 flex gap-1 relative">
+                                        <div class="footer-contact-messag rounded-[12px] h-7 w-10"></div>
+                                        <i class="footer-contact-icon-phone absolute fa fa-phone" aria-hidden="true"></i>
+                                        <a href="#">0899.1999.54</a>
                                     </li>
 
-                                    <li class="mb-4 flex">
-                                        <span class="phone-contact">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <span>
+                                    <li class="mb-4 flex gap-1 relative">
+                                        <div class="footer-contact-messag rounded-[12px] h-7 w-10"></div>
+                                        <i class="footer-contact-icon-phone absolute fa fa-phone" aria-hidden="true"></i>
                                         <a href="#">0965.73.53.03 (Zalo)</a>
                                     </li>
                                 </ul>
@@ -146,10 +144,9 @@
                             <div>
                                 <h3>Tanca USA</h3>
                                 <ul>
-                                    <li class="mb-4 flex">
-                                        <span class="phone-contact">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                        <span>
+                                    <li class="mb-4 flex gap-1 relative">
+                                        <div class="footer-contact-messag rounded-[12px] h-7 w-10"></div>
+                                        <i class="footer-contact-icon-phone absolute fa fa-phone" aria-hidden="true"></i>
                                         <a href="#"> 1-855-633-2443</a>
                                     </li>
                                 </ul>
