@@ -10,6 +10,7 @@
         <!-- Link styles -->
         <link rel="stylesheet" href="{{asset("assets/css/styles.css")}}">
         <link rel="stylesheet" href="{{asset("assets/css/commons/common-header.css")}}">
+        <link rel="stylesheet" href="{{asset("assets/css/commons/common-footer.css")}}">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -19,8 +20,11 @@
     </head>
     <body class="common-body-container">
         @include('commons.common-header')
+
         <div class="container-none">
             @yield('content')
         </div>
+
+        @yield('footer')
     </body>
 </html>

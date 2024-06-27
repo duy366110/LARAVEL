@@ -157,3 +157,7 @@
         </div>
     </section>
 @endsection
+
+@section('footer')
+    @include("commons.common-footer")
+@endsection
