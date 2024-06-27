@@ -1,0 +1,37 @@
+.common-header-component {
+    min-height: 85px;
+}
+
+.header-wrapper {
+    box-shadow: 0px 0px 1px 1px #0000001f;
+    left: 0px;
+    min-height: 85px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-title-parent {
+    font-size: 1.15rem!important;
+}
+
+.header-language-icon-down {
+    color: #cccccc;
+}
+
+.header-language:hover .language-items {
+    display: block;
+}
+
+.language-items li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.language-items li a:hover {
+    background-color: #f0f0f0;
+}
