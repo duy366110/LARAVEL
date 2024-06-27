@@ -65,8 +65,72 @@
         </div>
     </section>
 
-    <section>
+    <section class="max-w-screen-xl 2xl:max-w-screen-xl m-auto py-20 flex flex-col md:flex-row">
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <h2 class="font-bold text-[30px] px-3 text-left leading-[38px] md:text-[30px] md:leading-[55px]">Tìm câu trả lời bạn cần</h2>
+                <ul>
+                    <li>
+                        <button>
+                            <span>Tanca dùng để làm gì?</span>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div>
+                            <p>Tanca quản lý toàn bộ vòng đời của nhân viên từ họ được tuyển dụng vào công ty cho đến khi họ nghỉ việc. Tanca là giải pháp lý tưởng cho các doanh nghiệp muốn chuyển đổi số việc quản lý nhân sự giúp công ty tăng trưởng vượt trội.</p>
+                            <p>Tanca gồm 12 nhóm tính năng giải quyết 4 bài toán từ Quản lý dữ liệu nhân sự, Đào tạo và nâng cao năng lực cho nhân viên, Quản lý lợi ích và xây dựng văn hóa làm việc theo hiệu suất.</p>
+                        </div>
+                    </li>
 
+                    <li>
+                        <button>
+                            <span>Tanca có miễn phí không?</span>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div>
+                            <p>Tanca cung cấp một loạt các gói dịch vụ để đáp ứng nhu cầu của các tổ chức khác nhau. Gói khởi đầu của Tanca hoàn toàn miễn phí, phù hợp với các nhóm có tối đa 25 người dùng. Đối với các nhóm lớn hơn hoặc những nhu cầu nâng cao hơn các gói khác sẽ hỗ trợ nhu cầu cho họ. Thông tin chi tiết và các ưu đãi cụ thể của từng gói có thể được tìm thấy trực tiếp trên trang web định giá của chúng tôi.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button>
+                            <span>Ai sở hữu Tanca?</span>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div>
+                            <p>Tanca được sở hữu và phát triển bởi công ty Tanca Global. Chúng tôi tự hào là nhà cung cấp nền tảng quản lý nhân sự hàng đầu tại Châu Á, với công nghệ tiên tiến và hiện đại. Tanca được thiết kế để giải quyết các thách thức trong quản lý nhân sự, giúp các doanh nghiệp có thể quản lý lịch làm việc, chấm công và xếp ca một cách hiệu quả. Được hơn 57.000 không gian làm việc trên toàn thế giới tin tưởng sử dụng, chúng tôi cam kết mang lại giải pháp quản lý nhân sự hiệu quả và bảo mật.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <button>
+                            <span>An toàn và bảo mật</span>
+                            <i class="fa fa-plus" aria-hidden="true"></i>
+                        </button>
+                        <div>
+                            <p>Về mặt an toàn và bảo mật, Tanca cam kết bảo vệ thông tin cá nhân và dữ liệu của người dùng là ưu tiên hàng đầu. Nền tảng của chúng tôi cung cấp các tính năng bảo mật toàn diện, bảo vệ dữ liệu từ cấp độ vật lý đến ứng dụng, đảm bảo tính minh bạch và an toàn cho người dùng. Tanca liên tục cập nhật và nâng cao các biện pháp bảo mật để người dùng có thể yên tâm khi sử dụng các dịch vụ của chúng tôi.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div>
+                    <h2>Đặt lịch tư vấn</h2>
+                    <p>Chúng tôi có thể hỗ trợ đội ngũ nhân sự của bạn như thế nào?</p>
+                    <a class="common-btn common-hover-btn" href="#">
+                        <span>Cần tư vấn</span>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <div>
+                    <h2>Khám phá những kiến thức khác?</h2>
+                    <p>Khám phá những lợi thế của Tanca dành cho các doanh nghiệp hàng đầu, hiểu rõ hơn về năng suất và so sánh phần mềm.</p>
+                    <a class="common-btn common-hover-btn" href="#">
+                        <span>Khám phá Blog</span>
+                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 @endsection
 
