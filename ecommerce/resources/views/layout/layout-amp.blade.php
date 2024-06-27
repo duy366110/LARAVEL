@@ -6,6 +6,7 @@
 
         <script async src="https://cdn.ampproject.org/v0.js"></script>
         <script async src="https://cdn.tailwindcss.com"></script>
+        <script src="https://kit.fontawesome.com/cf41fb98a5.js" crossorigin="anonymous"></script>
         <title>Laravel</title>
 
         <!-- Fonts -->

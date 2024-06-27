@@ -16,6 +16,10 @@
     font-size: 1.15rem!important;
 }
 
+.header-language-icon-down {
+    color: #cccccc;
+}
+
 .header-language:hover .language-items {
     display: block;
 }

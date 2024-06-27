@@ -1,5 +1,15 @@
+/* SECTION BANNER */
 .banner-infor {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* SECTION RATING */
+.dashboard-rating-yellow {
+    color: rgb(250 202 21);
+}
+
+.dashboard-rating-gray {
+    color: rgb(209 213 219);
 }
