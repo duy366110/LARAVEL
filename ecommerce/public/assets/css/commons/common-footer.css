@@ -2,3 +2,74 @@
     background-color: var(--color-1);
     color: white;
 }
+
+.footer-contact-messag {
+    background-color: #1ecc78;
+}
+
+.footer-contact-icon-phone {
+    animation-name: phonerun;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-timing-function: ease;
+    transition: all .5s ease;
+    font-size: 15px;
+    left: 12px;
+    top: 7px;
+}
+
+@-webkit-keyframes phonerun{
+    0% {
+    }
+    10% {
+      -webkit-transform:rotate(5deg);
+      -moz-transform:rotate(5deg);
+      -o-transform:rotate(5deg); 
+    }
+    20% {
+      -webkit-transform:rotate(-5deg);
+      -moz-transform:rotate(-5deg);
+      -o-transform:rotate(-5deg);       
+    }
+    30% {
+      -webkit-transform:rotate(5deg);
+      -moz-transform:rotate(5deg);
+      -o-transform:rotate(5deg);       
+    }
+     40% {
+      -webkit-transform:rotate(-5deg);
+      -moz-transform:rotate(-5deg);
+      -o-transform:rotate(-5deg);       
+    }
+    50% {
+      -webkit-transform:rotate(5deg);
+      -moz-transform:rotate(5deg);
+      -o-transform:rotate(5deg);       
+    }
+     60% {
+      -webkit-transform:rotate(-5deg);
+      -moz-transform:rotate(-5deg);
+      -o-transform:rotate(-5deg);       
+    }
+    70% {
+      -webkit-transform:rotate(5deg);
+      -moz-transform:rotate(5deg);
+      -o-transform:rotate(5deg);       
+    }
+    80% {
+      -webkit-transform:rotate(-5deg);
+      -moz-transform:rotate(-5deg);
+      -o-transform:rotate(-5deg);       
+    }
+    90% {
+      -webkit-transform:rotate(5deg);
+      -moz-transform:rotate(5deg);
+      -o-transform:rotate(5deg);       
+    }
+     100% {
+      -webkit-transform:rotate(-5deg);
+      -moz-transform:rotate(-5deg);
+      -o-transform:rotate(-5deg);       
+    }
+  }
