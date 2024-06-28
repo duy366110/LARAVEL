@@ -67,6 +67,54 @@
         </div>
     </section>
 
+    <!-- SECTION APPROVE -->
+    <section class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto py-24">
+        <h2 class="text-[24px] text-center leading-[35px] md:text-[30px] md:leading-[55px]">Được công nhận bởi các tổ chức chuyên nghiệp</h2>
+        <h3 class="text-center mt-6 text-[18px]">Nền tảng HR Tech tốt nhất Châu Á</h3>
+        <div class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto bg-gray-100 flex flex-col md:flex-row p-10 mt-10">
+            <div class="w-full flex">
+                <div class="p-2 mb-20 md:mb-0 md:p-10">
+                    <img src="{{asset("assets/images/certificate/gartner-peerinsights.svg")}}" alt="tanca certificate" />
+                    <h2 class="text-2xl font-normal">Tanca</h2>
+                    <p class="mb-5 font-normal text-md md:text-lg">Cloud HCM Suites dành cho doanh nghiệp trên 1,000 nhân viên</p>
+                    <p class="mb-0 text-[30px]">
+                        <span>4.5<span>
+                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
+                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
+                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
+                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
+                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
+                    </p>
+                    <a class="font-normal text-md md:text-lg text-[#1ecc78]" href="#">417 Ratings</a>
+                </div>
+
+                <div class="p-2 md:p-10 pt-20 md:pt-10 md:border-grey-bf border-t md:border-t-0 md:border-l">
+                    <div class="grid grid-cols-2 gap-10">
+                        <div>
+                            <img src="{{asset("assets/images/certificate/custom-choise.svg")}}" alt="tanca certificate" />
+                            <p class="font-normal text-md md:text-lg">Gartner report "Voice of the Customer" 2022</p>
+                        </div>
+
+                        <div>
+                            <img src="{{asset("assets/images/certificate/software-suggest.svg")}}" alt="tanca certificate" />
+                            <p class="font-normal text-md md:text-lg">Customers` Choice Software Recommendation Award</p>
+                        </div>
+
+                        <div>
+                            <img src="{{asset("assets/images/certificate/Vendor-of-the-year-2022.svg")}}" alt="tanca certificate" />
+                            <p class="font-normal text-md md:text-lg">Staffing Provider of the Year 2022</p>
+                        </div>
+
+                        <div>
+                            <img src="{{asset("assets/images/certificate/ATS-software.svg")}}" alt="tanca certificate" />
+                            <p class="font-normal text-md md:text-lg">Most Trusted ATS Software Award</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <section>
+
     <!-- SECTON QUESTION -->
     <section class="max-w-screen-xl 2xl:max-w-screen-xl m-auto py-20 flex flex-col md:flex-row">
         <div class="grid grid-cols-2 gap-20">
@@ -79,8 +127,8 @@
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
                         <div class="overflow-visible h-auto px-4 pb-7">
-                            <p>Tanca quản lý toàn bộ vòng đời của nhân viên từ họ được tuyển dụng vào công ty cho đến khi họ nghỉ việc. Tanca là giải pháp lý tưởng cho các doanh nghiệp muốn chuyển đổi số việc quản lý nhân sự giúp công ty tăng trưởng vượt trội.</p>
-                            <p>Tanca gồm 12 nhóm tính năng giải quyết 4 bài toán từ Quản lý dữ liệu nhân sự, Đào tạo và nâng cao năng lực cho nhân viên, Quản lý lợi ích và xây dựng văn hóa làm việc theo hiệu suất.</p>
+                            <p class="font-normal text-md md:text-lg">Tanca quản lý toàn bộ vòng đời của nhân viên từ họ được tuyển dụng vào công ty cho đến khi họ nghỉ việc. Tanca là giải pháp lý tưởng cho các doanh nghiệp muốn chuyển đổi số việc quản lý nhân sự giúp công ty tăng trưởng vượt trội.</p>
+                            <p class="font-normal text-md md:text-lg">Tanca gồm 12 nhóm tính năng giải quyết 4 bài toán từ Quản lý dữ liệu nhân sự, Đào tạo và nâng cao năng lực cho nhân viên, Quản lý lợi ích và xây dựng văn hóa làm việc theo hiệu suất.</p>
                         </div>
                     </li>
 
@@ -90,7 +138,7 @@
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
                         <div class="overflow-hidden h-0 px-4">
-                            <p>Tanca cung cấp một loạt các gói dịch vụ để đáp ứng nhu cầu của các tổ chức khác nhau. Gói khởi đầu của Tanca hoàn toàn miễn phí, phù hợp với các nhóm có tối đa 25 người dùng. Đối với các nhóm lớn hơn hoặc những nhu cầu nâng cao hơn các gói khác sẽ hỗ trợ nhu cầu cho họ. Thông tin chi tiết và các ưu đãi cụ thể của từng gói có thể được tìm thấy trực tiếp trên trang web định giá của chúng tôi.</p>
+                            <p class="font-normal text-md md:text-lg">Tanca cung cấp một loạt các gói dịch vụ để đáp ứng nhu cầu của các tổ chức khác nhau. Gói khởi đầu của Tanca hoàn toàn miễn phí, phù hợp với các nhóm có tối đa 25 người dùng. Đối với các nhóm lớn hơn hoặc những nhu cầu nâng cao hơn các gói khác sẽ hỗ trợ nhu cầu cho họ. Thông tin chi tiết và các ưu đãi cụ thể của từng gói có thể được tìm thấy trực tiếp trên trang web định giá của chúng tôi.</p>
                         </div>
                     </li>
 
@@ -100,7 +148,7 @@
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
                         <div class="overflow-hidden h-0 px-4">
-                            <p>Tanca được sở hữu và phát triển bởi công ty Tanca Global. Chúng tôi tự hào là nhà cung cấp nền tảng quản lý nhân sự hàng đầu tại Châu Á, với công nghệ tiên tiến và hiện đại. Tanca được thiết kế để giải quyết các thách thức trong quản lý nhân sự, giúp các doanh nghiệp có thể quản lý lịch làm việc, chấm công và xếp ca một cách hiệu quả. Được hơn 57.000 không gian làm việc trên toàn thế giới tin tưởng sử dụng, chúng tôi cam kết mang lại giải pháp quản lý nhân sự hiệu quả và bảo mật.</p>
+                            <p class="font-normal text-md md:text-lg">Tanca được sở hữu và phát triển bởi công ty Tanca Global. Chúng tôi tự hào là nhà cung cấp nền tảng quản lý nhân sự hàng đầu tại Châu Á, với công nghệ tiên tiến và hiện đại. Tanca được thiết kế để giải quyết các thách thức trong quản lý nhân sự, giúp các doanh nghiệp có thể quản lý lịch làm việc, chấm công và xếp ca một cách hiệu quả. Được hơn 57.000 không gian làm việc trên toàn thế giới tin tưởng sử dụng, chúng tôi cam kết mang lại giải pháp quản lý nhân sự hiệu quả và bảo mật.</p>
                         </div>
                     </li>
 
@@ -110,7 +158,7 @@
                             <i class="fa fa-plus" aria-hidden="true"></i>
                         </button>
                         <div class="overflow-hidden h-0 px-4">
-                            <p>Về mặt an toàn và bảo mật, Tanca cam kết bảo vệ thông tin cá nhân và dữ liệu của người dùng là ưu tiên hàng đầu. Nền tảng của chúng tôi cung cấp các tính năng bảo mật toàn diện, bảo vệ dữ liệu từ cấp độ vật lý đến ứng dụng, đảm bảo tính minh bạch và an toàn cho người dùng. Tanca liên tục cập nhật và nâng cao các biện pháp bảo mật để người dùng có thể yên tâm khi sử dụng các dịch vụ của chúng tôi.</p>
+                            <p class="font-normal text-md md:text-lg">Về mặt an toàn và bảo mật, Tanca cam kết bảo vệ thông tin cá nhân và dữ liệu của người dùng là ưu tiên hàng đầu. Nền tảng của chúng tôi cung cấp các tính năng bảo mật toàn diện, bảo vệ dữ liệu từ cấp độ vật lý đến ứng dụng, đảm bảo tính minh bạch và an toàn cho người dùng. Tanca liên tục cập nhật và nâng cao các biện pháp bảo mật để người dùng có thể yên tâm khi sử dụng các dịch vụ của chúng tôi.</p>
                         </div>
                     </li>
                 </ul>
@@ -119,7 +167,7 @@
             <div class="flex flex-col gap-5">
                 <div class="p-9 bg-[#F5F9FF] rounded-xl">
                     <h2 class="font-bold text-[18px]">Đặt lịch tư vấn</h2>
-                    <p class="my-5">Chúng tôi có thể hỗ trợ đội ngũ nhân sự của bạn như thế nào?</p>
+                    <p class="my-5 font-normal text-md md:text-lg">Chúng tôi có thể hỗ trợ đội ngũ nhân sự của bạn như thế nào?</p>
                     <a class="common-btn common-hover-btn" href="#">
                         <span>Cần tư vấn</span>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -128,7 +176,7 @@
 
                 <div class="p-9 bg-[#F5F9FF] rounded-xl">
                     <h2 class="font-bold text-[18px]">Khám phá những kiến thức khác?</h2>
-                    <p class="my-5">Khám phá những lợi thế của Tanca dành cho các doanh nghiệp hàng đầu, hiểu rõ hơn về năng suất và so sánh phần mềm.</p>
+                    <p class="my-5 font-normal text-md md:text-lg">Khám phá những lợi thế của Tanca dành cho các doanh nghiệp hàng đầu, hiểu rõ hơn về năng suất và so sánh phần mềm.</p>
                     <a class="common-btn common-hover-btn align-center" href="#">
                         <span>Khám phá Blog</span>
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
