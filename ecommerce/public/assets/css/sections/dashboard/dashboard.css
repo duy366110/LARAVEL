@@ -15,6 +15,11 @@
 }
 
 /* SECTION SOLUTION */
+.st-active {
+    background-color: var(--color-2)!important;
+    color: white!important;
+}
+
 .scd-td-pointer {
     width: 110px;
 }
