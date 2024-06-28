@@ -132,7 +132,7 @@
 
                                 <li class="order-0 group p-4 my-2 cursor-pointer">
                                     <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon">
+                                        <img src="{{asset("assets/images/icons/icon-employees-onboarding.svg")}}" alt="tanca icon">
                                         <span>Hội nhập nhân viên</span>
                                     </h2>
                                     <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
@@ -140,7 +140,7 @@
 
                                 <li class="order-0 group p-4 my-2 cursor-pointer">
                                     <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon">
+                                        <img src="{{asset("assets/images/icons/icon-hiring-workflow-automation.svg")}}" alt="tanca icon">
                                         <span>Tự động hoá quy trình</span>
                                     </h2>
                                     <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
@@ -155,30 +155,30 @@
                     
                     <div class="feature-content-card flex flex-row-reverse justify-between px-0 md:py-10 h-full">
                         <div class="fcc-infor md:w-[35%]">
-                            <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Tìm kiếm Nhân tài</h2>
-                            <p class="font-normal text-md md:text-lg leading-6">Tìm kiếm nhân sự phù hợp</p>
+                            <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Quyền lợi nhân viên</h2>
+                            <p class="font-normal text-md md:text-lg leading-6">Chấm công & tính lương toàn diện</p>
                             <a class="common-btn common-normal-btn block my-5 py-3 px-10" href="#">Khám phá</a>
                             <ul>
-                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer shadow-xl">
+                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer">
                                     <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon">
-                                        <span>Sàng lọc hồ sơ bằng AI</span>
-                                    </h2>
-                                    <p>Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                </li>
-
-                                <li class="order-0 group p-4 my-2 cursor-pointer">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon">
-                                        <span>Sàng lọc hồ sơ bằng AI</span>
+                                        <img src="{{asset("assets/images/icons/icon-multi-method-time-tracking.svg")}}" alt="tanca icon">
+                                        <span>Chấm công đa cách thức</span>
                                     </h2>
                                     <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
                                 </li>
 
-                                <li class="order-0 group p-4 my-2 cursor-pointer">
+                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer shadow-xl">
                                     <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon">
-                                        <span>Sàng lọc hồ sơ bằng AI</span>
+                                        <img src="{{asset("assets/images/icons/icon-automatic-payroll-system.svg")}}" alt="tanca icon">
+                                        <span>Hệ thống tính lương linh động</span>
+                                    </h2>
+                                    <p class="block">Hệ thống tính lương tự động cho phép các công ty trả lương cho nhân viên của mình một cách chính xác và đúng hạn mà không cần tính toán thủ công.</p>
+                                </li>
+
+                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer">
+                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
+                                        <img src="{{asset("assets/images/icons/icon-leave-management.svg")}}" alt="tanca icon">
+                                        <span>Quản lý nghỉ phép</span>
                                     </h2>
                                     <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
                                 </li>
