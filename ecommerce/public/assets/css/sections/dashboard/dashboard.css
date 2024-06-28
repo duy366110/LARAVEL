@@ -13,3 +13,8 @@
 .dashboard-rating-gray {
     color: rgb(209 213 219);
 }
+
+/* SECTION SOLUTION */
+.scd-td-pointer {
+    width: 110px;
+}
