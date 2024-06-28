@@ -1,4 +1,4 @@
-<footer class="common-footer-component pt-8 mt-10">
+<footer class="common-footer-component pt-8">
     <div class="footer-content container mx-auto">
         <div class="flex gap-5">
             <div class="footer-infor-company">
