@@ -5,9 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Tinify\Tinify;
 
-class Service {
-    public string $title;
+class Language {
     public string $image;
+    public string $title;
 
     public function __construct($title, $image) {
         $this->title = $title;
@@ -23,6 +23,16 @@ class Rating {
     }
 }
 
+class Service {
+    public string $title;
+    public string $image;
+
+    public function __construct($title, $image) {
+        $this->title = $title;
+        $this->image = $image;
+    }
+}
+
 class DashboardController extends Controller {
 
     public $tinify_service = null;
@@ -30,50 +40,60 @@ class DashboardController extends Controller {
     public function __construct() { }
 
     public function index() {
+        $origins_path = [
+            "assets/images/flags/flag-vi.png",
+            "assets/images/flags/flag-en.png",
+        ];
 
-        // try {
-        //     $path_origin = "assets/images/banners/bg-green-homepage.png";
-        //     $path_optimize = "assets/images_optimize/banners/bg-green-homepage.png";
+        try {
+            $path_origin = "assets/images/flags/flag-en.png";
+            $path_optimize = "assets/images_optimize/flags/flag-en.png";
 
-        //     $source = \Tinify\fromFile($path_origin);
-        //     $source->toFile($path_optimize);
+            $source = \Tinify\fromFile($path_origin);
+            $source->toFile($path_optimize);
 
-        // } catch (Tinify\Exception $e) {
-        //     echo $e->getMessage();
-        // }
+        } catch (Tinify\Exception $e) {
+            echo $e->getMessage();
+        }
+
+        $languages = [
+            new Language("Tiếng việt", "assets/images_optimize/flags/flag-vi.png"),
+            new Language("English", "assets/images_optimize/flags/flag-en.png"),
+        ];
 
         $services = [
-            new Service("Tuyển dụng", "assets/images/icons/icon-hiring.png"),
-            new Service("Đào tạo", "assets/images/icons/icon-learning.png"),
-            new Service("Core HR", "assets/images/icons/icon-employee-onboarding.png"),
-            new Service("Xếp ca", "assets/images/icons/icon-scheduling.png"),
-            new Service("Chấm công", "assets/images/icons/icon-time-tracking.png"),
-            new Service("Lương", "assets/images/icons/icon-tinh-luong-tu-dong.png"),
-            new Service("Gắn kết", "assets/images/icons/icon-career.png"),
-            new Service("Nhân tài", "assets/images/icons/icon-about-us.png"),
-            new Service("Hiệu suất", "assets/images/icons/icon-quan-ly-okr-bsc-kpi.png"),
-            new Service("Yêu cầu", "assets/images/icons/icon-request-approvals.png"),
-            new Service("Công việc", "assets/images/icons/icon-tasks-workflow.png"),
-            new Service("OKR-KPI", "assets/images/icons/icon-bao-cao-dong.png"),
+            new Service("Tuyển dụng", "assets/images_optimize/icons/icon-hiring.png"),
+            new Service("Đào tạo", "assets/images_optimize/icons/icon-learning.png"),
+            new Service("Core HR", "assets/images_optimize/icons/icon-employee-onboarding.png"),
+            new Service("Xếp ca", "assets/images_optimize/icons/icon-scheduling.png"),
+            new Service("Chấm công", "assets/images_optimize/icons/icon-time-tracking.png"),
+            new Service("Lương", "assets/images_optimize/icons/icon-tinh-luong-tu-dong.png"),
+            new Service("Gắn kết", "assets/images_optimize/icons/icon-career.png"),
+            new Service("Nhân tài", "assets/images_optimize/icons/icon-about-us.png"),
+            new Service("Hiệu suất", "assets/images_optimize/icons/icon-quan-ly-okr-bsc-kpi.png"),
+            new Service("Yêu cầu", "assets/images_optimize/icons/icon-request-approvals.png"),
+            new Service("Công việc", "assets/images_optimize/icons/icon-tasks-workflow.png"),
+            new Service("OKR-KPI", "assets/images_optimize/icons/icon-bao-cao-dong.png"),
         ];
 
 
         $ratings = [
-            new Rating("assets/images/logos/companys/logo-vinamilk.png"),
-            new Rating("assets/images/logos/companys/logo-katinat.png"),
-            new Rating("assets/images/logos/companys/logo-turner.png"),
-            new Rating("assets/images/logos/companys/logo-decathlon.png"),
-            new Rating("assets/images/logos/companys/logo-vascara.png"),
-            new Rating("assets/images/logos/companys/logo-vinhomes.png"),
-            new Rating("assets/images/logos/companys/logo-shopee.png"),
-            new Rating("assets/images/logos/companys/logo-ecoe.png"),
-            new Rating("assets/images/logos/companys/logo-galaxyone.png"),
-            new Rating("assets/images/logos/companys/logo-vieON.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-vinamilk.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-katinat.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-turner.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-decathlon.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-vascara.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-vinhomes.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-shopee.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-ecoe.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-galaxyone.png"),
+            new Rating("assets/images_optimize/logos/companys/logo-vieON.png"),
         ];
 
         return view("dashboard.dashboard-en", [
+            'languages' => $languages,
+            'ratings' => $ratings,
             'services' => $services,
-            "ratings" => $ratings,
         ]);
     }
 }

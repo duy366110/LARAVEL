@@ -20,23 +20,19 @@
 
           <div class="header-language relative mr-8">
             <button class="flex items-center gap-3">
-              <img class="w-8" src="{{asset("assets/images/flags/flag-vi.png")}}" alt="flag" />
+              <img class="w-8" src="{{asset("assets/images_optimize/flags/flag-vi.png")}}" alt="flag" />
               <h2>Đổi ngôn ngữ</h2>
               <i class="header-language-icon-down fa fa-angle-down" aria-hidden="true"></i>
             </button>
             <ul class="language-items absolute hidden left-0 top-0 bg-white shadow w-full">
-              <li>
-                <a href="#">
-                  <img class="w-8" src="{{asset("assets/images/flags/flag-vi.png")}}" alt="flag" />
-                  <span>Tiếng việt</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img class="w-8" src="{{asset("assets/images/flags/flag-en.png")}}" alt="flag" />
-                  <span>English</span>
-                </a>
-              </li>
+              @foreach($languages as $language)
+                <li>
+                  <a href="#">
+                    <img class="w-8" src="{{asset($language->image)}}" alt="flag" />
+                    <span>{{$language->title}}</span>
+                  </a>
+                </li>
+              @endforeach
             </ul>
           </div>
 
