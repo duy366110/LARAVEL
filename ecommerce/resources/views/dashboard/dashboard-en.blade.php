@@ -75,40 +75,43 @@
 
             <div class="feature-wrapper">
                 <ul class="feature-tabs border-b border-gray-200 mt-20 flex flex-wrap gap-5 justify-center">
-                    <li class="feature-tab-item">
-                        <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
-                            <img src="{{asset("assets/images/icons/icon-tab-talent-aquistion.svg")}}" alt="tanca icon" />
-                            <span>Tìm kiếm nhân tài</span>
-                        </button>
-                    </li>
 
-                    <li class="feature-tab-item">
+                    @foreach($features as $feature)
+                        <li class="feature-tab-item">
+                            <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
+                                <img src="{{asset($feature->icon)}}" alt="tanca icon" />
+                                <span>{{$feature->title}}</span>
+                            </button>
+                        </li>
+                    @endforeach
+
+                    {{-- <li class="feature-tab-item">
                         <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
                             <img src="{{asset("assets/images/icons/icon-tab-benefits.svg")}}" alt="tanca icon" />
                             <span>Quyền lợi nhân viên</span>
                         </button>
-                    </li>
+                    </li> --}}
 
-                    <li class="feature-tab-item">
+                    {{-- <li class="feature-tab-item">
                         <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
                             <img src="{{asset("assets/images/icons/icon-tab-talent-management.svg")}}" alt="tanca icon" />
                             <span>Quản lý nhân tài</span>
                         </button>
-                    </li>
+                    </li> --}}
 
-                    <li class="feature-tab-item">
+                    {{-- <li class="feature-tab-item">
                         <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
                             <img src="{{asset("assets/images/icons/icon-tab-performance.svg")}}" alt="tanca icon" />
                             <span>Thúc đẩy hiệu suất</span>
                         </button>
-                    </li>
+                    </li> --}}
 
-                    <li class="feature-tab-item">
+                    {{-- <li class="feature-tab-item">
                         <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
                             <img src="{{asset("assets/images/icons/icon-tab-workforce.svg")}}" alt="tanca icon" />
                             <span>Quản lý nguồn lực</span>
                         </button>
-                    </li>
+                    </li> --}}
 
                 </ul>
                 <div class="feature-contents py-20">

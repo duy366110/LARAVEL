@@ -33,6 +33,19 @@ class Service {
     }
 }
 
+class Feature {
+    public string $title;
+    public string $icon;
+    public string $banner;
+    public $recommends = [];
+    public function __construct($title, $icon, $banner, $recommends) {
+        $this->title = $title;
+        $this->icon = $icon;
+        $this->banner = $banner;
+        $this->recommends = $recommends;
+    }
+}
+
 class SolutionContet {
     public string $flag;
     public string $title;
@@ -97,6 +110,38 @@ class DashboardController extends Controller {
             new Service("OKR-KPI", "assets/images_optimize/icons/icon-bao-cao-dong.png"),
         ];
 
+        $features = [
+            new Feature(
+                "Tìm kiếm nhân tài",
+                "assets/images_optimize/icons/icon-tab-talent-aquistion.svg",
+                "",
+                []
+            ),
+            new Feature(
+                "Quyền lợi nhân viên",
+                "assets/images_optimize/icons/icon-tab-benefits.svg",
+                "",
+                []
+            ),
+            new Feature(
+                "Quản lý nhân tài",
+                "assets/images_optimize/icons/icon-tab-talent-management.svg",
+                "",
+                []
+            ),
+            new Feature(
+                "Thúc đẩy hiệu suất",
+                "assets/images_optimize/icons/icon-tab-performance.svg",
+                "",
+                []
+            ),
+            new Feature(
+                "Quản lý nguồn lực",
+                "assets/images_optimize/icons/icon-tab-workforce.svg",
+                "",
+                []
+            ),
+        ];
 
         $ratings = [
             new Rating("assets/images_optimize/logos/companys/logo-vinamilk.png"),
@@ -263,6 +308,7 @@ class DashboardController extends Controller {
 
         return view("dashboard.dashboard-en", [
             'languages' => $languages,
+            'features' => $features,
             'ratings' => $ratings,
             'services' => $services,
             'solutions' => $solutions,
