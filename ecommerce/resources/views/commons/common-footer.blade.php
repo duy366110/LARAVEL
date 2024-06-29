@@ -176,7 +176,7 @@
                 <div><a href="#">Cookie Preferences</a></div>
                 <div>
                     <a href="#">
-                        <img src="{{asset("assets/images/icons/dmca_protected_sml_120m.png")}}" alt="tanca icon"/>
+                        <img src="{{asset("assets/images_optimize/icons/dmca_protected_sml_120m.png")}}" alt="tanca icon"/>
                     </a>
                 </div>
                 <div>@ 2024 Công ty Cổ phần Tanca sở hữu bản quyền.</div>

@@ -100,29 +100,15 @@
                                         <p class="font-normal text-md md:text-lg leading-6">Tìm kiếm nhân sự phù hợp</p>
                                         <a class="common-btn common-normal-btn block my-5 py-3 px-10" href="#">Khám phá</a>
                                         <ul>
-                                            <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer shadow-xl">
-                                                <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                                    {{-- <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon"> --}}
-                                                    <span>Sàng lọc hồ sơ bằng AI</span>
-                                                </h2>
-                                                <p>Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                            </li>
-
-                                            <li class="order-0 group p-4 my-2 cursor-pointer">
-                                                <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                                    {{-- <img src="{{asset("assets/images/icons/icon-employees-onboarding.svg")}}" alt="tanca icon"> --}}
-                                                    <span>Hội nhập nhân viên</span>
-                                                </h2>
-                                                <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                            </li>
-
-                                            <li class="order-0 group p-4 my-2 cursor-pointer">
-                                                <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                                    {{-- <img src="{{asset("assets/images/icons/icon-hiring-workflow-automation.svg")}}" alt="tanca icon"> --}}
-                                                    <span>Tự động hoá quy trình</span>
-                                                </h2>
-                                                <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                            </li>
+                                            @foreach($recommend->options as $option)
+                                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer {{$option->status? 'shadow-xl' : ''}}">
+                                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
+                                                        <img src="{{asset($option->icon)}}" alt="tanca icon">
+                                                        <span>{{$option->title}}</span>
+                                                    </h2>
+                                                    <p {{$option->status? '' : 'hidden'}}>{{$option->description}}</p>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </div>
                                     <div class="fcc-image h-full w-full md:w-[60%] overflow-hidden hidden md:block">
@@ -224,22 +210,22 @@
                 <div class="p-2 md:p-10 pt-20 md:pt-10 md:border-grey-bf border-t md:border-t-0 md:border-l">
                     <div class="grid grid-cols-2 gap-10">
                         <div>
-                            <img src="{{asset("assets/images/certificate/custom-choise.svg")}}" alt="tanca certificate" />
+                            <img src="{{asset("assets/images_optimize/certificate/custom-choise.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Gartner report "Voice of the Customer" 2022</p>
                         </div>
 
                         <div>
-                            <img src="{{asset("assets/images/certificate/software-suggest.svg")}}" alt="tanca certificate" />
+                            <img src="{{asset("assets/images_optimize/certificate/software-suggest.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Customers` Choice Software Recommendation Award</p>
                         </div>
 
                         <div>
-                            <img src="{{asset("assets/images/certificate/Vendor-of-the-year-2022.svg")}}" alt="tanca certificate" />
+                            <img src="{{asset("assets/images_optimize/certificate/Vendor-of-the-year-2022.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Staffing Provider of the Year 2022</p>
                         </div>
 
                         <div>
-                            <img src="{{asset("assets/images/certificate/ATS-software.svg")}}" alt="tanca certificate" />
+                            <img src="{{asset("assets/images_optimize/certificate/ATS-software.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Most Trusted ATS Software Award</p>
                         </div>
                     </div>

@@ -6,7 +6,7 @@
               <span class="sr-only">Your Company</span>
               <img
                 class="h-8 w-auto"
-                src="{{asset("assets/images/logo_tanca.svg")}}"
+                src="{{asset("assets/images_optimize/logo_tanca.svg")}}"
                 alt="">
             </a>
           </div>
