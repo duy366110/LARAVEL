@@ -6,11 +6,11 @@
 
 @section("content")
     <!-- SECTION BANNER -->
-    <section class="dashboard-banner overflow-hidden pt-20 flex flex-col align-center justify-center bg-bottom bg-no-repeat bg-cover bg-[url('{{asset("assets/images_optimize/banners/bg-green-homepage.png")}}')]">
+    <section class="overflow-hidden pt-20 flex flex-col align-center justify-center bg-bottom bg-no-repeat bg-cover bg-[url('{{asset("assets/images_optimize/banners/bg-green-homepage.png")}}')]">
         <div class="banner-infor relative z-2 pt-60 px-3 md:px-10 w-full flex flex-col items-center">
-            <h2 class="banner-infor-title text-[28px] text-center md:text-3xl font-bold leading-normal mb-6">Siêu sức mạnh của nền tảng HRM hàng đầu Châu Á</h2>
-            <h3 class="banner-infor-subtitle text-lg text-center md:text-lg font-normal leading-6 mb-6">Quản lý toàn bộ vòng đời phát triển của nhân viên</h3>
-            <div class="banner-infor-btn-options flex gap-5">
+            <h2 class="text-[28px] text-center md:text-3xl font-bold leading-normal mb-6">Siêu sức mạnh của nền tảng HRM hàng đầu Châu Á</h2>
+            <h3 class="text-lg text-center md:text-lg font-normal leading-6 mb-6">Quản lý toàn bộ vòng đời phát triển của nhân viên</h3>
+            <div class="flex gap-5">
                 <a class="common-btn common-normal-btn py-3 px-4" href="#">Dùng thử miễn phí</a>
                 <a class="common-btn common-hover-btn py-3 px-4" href="#">Cần tư vấn</a>
             </div>
@@ -19,19 +19,18 @@
     </section>
 
     <!-- SECTION RATING -->
-    <section class="max-w-screen-2xl hidden m-auto pt-20 pb-[120px]">
+    <section class="max-w-screen-2xl m-auto pt-20 pb-[120px]">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row divide-x divide-gray-300">
                 <div class="basic-1/3">
-                    <h2 class="font-medium text-xl md:text-2xl">Được hơn 57,000 nơi làm việc tin tưởng</h2>
-                    <div class="flex justify-center md:justify-start items-center my-2 md:my-7 gap-3">
-                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
-                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
-                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
-                        <i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i>
-                        <i class="dashboard-rating-gray fa fa-star" aria-hidden="true"></i>
-                    </div>
-                    <p class="font-normal text-md md:text-lg">Dựa trên hơn 10,000 đánh giá thực tế của người dùng</p>
+                    <h2 class="font-medium text-xl text-center md:text-left md:text-2xl">Được hơn 57,000 nơi làm việc tin tưởng</h2>
+                    <ul class="flex justify-center md:justify-start items-center my-2 md:my-7 gap-3">
+                        @for($i = 0; $i < 4; $i++)
+                            <li><i class="dashboard-rating-yellow fa fa-star" aria-hidden="true"></i></li>
+                        @endfor
+                        <li><i class="dashboard-rating-gray fa fa-star" aria-hidden="true"></i></li>
+                    </ul>
+                    <p class="font-normal text-md md:text-lg text-center md:text-left">Dựa trên hơn 10,000 đánh giá thực tế của người dùng</p>
                 </div>
                 <div class="basis-2/3 px-3 md:px-12 md:ml-12">
                     <div class="row clients-trust grid grid-flow-row-dense grid-cols-4 md:grid-cols-5">
