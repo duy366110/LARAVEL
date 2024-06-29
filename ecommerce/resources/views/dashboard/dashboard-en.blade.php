@@ -44,13 +44,13 @@
     </section>
 
     <!-- SECTION SERVICE -->
-    <section class="max-w-screen-2xl hidden m-auto">
+    <section class="max-w-screen-2xl m-auto">
         <div class="container mx-auto">
             <h2 class="font-bold text-3xl text-center">Tất cả tính năng của nền tảng HR toàn diện</h2>
-            <ul class="flex gap-3 justify-center my-20">
+            <ul class="flex gap-3 justify-center flex-wrap mt-20 mb-10">
 
                 @foreach ($services as $service)
-                    <li class="w-[30%] md:w-[8%] overflow-hidden text-center">
+                    <li class="w-[30%] md:w-[6.9%] overflow-hidden text-center">
                         <a href="#">
                             <div class="w-16 h-16 rouded-lg bg-[#F8F9FF] m-auto flex flex-col justify-center mb-4">
                                 <img class="w-10 h-10 m-auto" src="{{asset($service->image)}}" alt="icons service" />
@@ -61,7 +61,7 @@
                 @endforeach
             </ul>
             <div class="flex justify-center align-center">
-                <a class="common-btn common-normal-btn py-3 px-4" href="#">Cần tư vấn</a>
+                <a class="common-btn common-normal-btn py-3 px-4 w-[250px] text-center" href="#">Cần tư vấn</a>
             </div>
         </div>
     </section>
