@@ -18,7 +18,7 @@
             <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Tài nguyên</a>
           </div>
 
-          <div class="header-language relative mr-8">
+          <div class="header-language relative mr-8 hidden">
             <button class="flex items-center gap-3">
               <img class="w-8" src="{{asset("assets/images_optimize/flags/flag-vi.png")}}" alt="flag" />
               <h2>Đổi ngôn ngữ</h2>
@@ -36,7 +36,7 @@
             </ul>
           </div>
 
-          <div class="header-auth">
+          <div class="header-auth hidden md:flex">
             <a class="common-btn common-hover-btn" href="#">Đăng nhập</a>
           </div>
         </nav>

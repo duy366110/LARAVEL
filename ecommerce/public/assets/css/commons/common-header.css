@@ -1,11 +1,11 @@
 .common-header-component {
-    min-height: 85px;
+    height: 85px;
 }
 
 .header-wrapper {
     box-shadow: 0px 0px 1px 1px #0000001f;
     left: 0px;
-    min-height: 85px;
+    height: 85px;
     position: fixed;
     top: 0px;
     width: 100%;
