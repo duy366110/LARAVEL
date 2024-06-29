@@ -6,20 +6,20 @@
 
 @section("content")
     <!-- SECTION BANNER -->
-    <section class="dashboard-banner relative bg-bottom bg-no-repeat bg-cover bg-[url('{{asset("assets/images_optimize/banners/bg-green-homepage.png")}}')]">
-        <img class="pt-20 w-full" src="{{asset("assets/images_optimize/banners/image-top-homepage.png")}}" alt="banner" />
-        <div class="banner-infor absolute w-full flex flex-col items-center">
-            <h2 class="banner-infor-title text-[28px] md:text-3xl font-bold leading-normal mb-6">Siêu sức mạnh của nền tảng HRM hàng đầu Châu Á</h2>
-            <h3 class="banner-infor-subtitle text-lg md:text-lg font-normal leading-6 mb-6">Quản lý toàn bộ vòng đời phát triển của nhân viên</h3>
-            <div class="banner-infor-btn-options flex gap-10">
+    <section class="dashboard-banner overflow-hidden pt-20 flex flex-col align-center justify-center bg-bottom bg-no-repeat bg-cover bg-[url('{{asset("assets/images_optimize/banners/bg-green-homepage.png")}}')]">
+        <div class="banner-infor relative z-2 pt-60 px-3 md:px-10 w-full flex flex-col items-center">
+            <h2 class="banner-infor-title text-[28px] text-center md:text-3xl font-bold leading-normal mb-6">Siêu sức mạnh của nền tảng HRM hàng đầu Châu Á</h2>
+            <h3 class="banner-infor-subtitle text-lg text-center md:text-lg font-normal leading-6 mb-6">Quản lý toàn bộ vòng đời phát triển của nhân viên</h3>
+            <div class="banner-infor-btn-options flex gap-5">
                 <a class="common-btn common-normal-btn py-3 px-4" href="#">Dùng thử miễn phí</a>
                 <a class="common-btn common-hover-btn py-3 px-4" href="#">Cần tư vấn</a>
             </div>
         </div>
+        <img class="relative z-1 mt-[-250px] lg:mt-[-350px] w-full" src="{{asset("assets/images_optimize/banners/image-top-homepage.png")}}" alt="tanca banner" />
     </section>
 
     <!-- SECTION RATING -->
-    <section class="max-w-screen-2xl m-auto pt-20 pb-[120px]">
+    <section class="max-w-screen-2xl hidden m-auto pt-20 pb-[120px]">
         <div class="container mx-auto">
             <div class="flex flex-col md:flex-row divide-x divide-gray-300">
                 <div class="basic-1/3">
@@ -45,7 +45,7 @@
     </section>
 
     <!-- SECTION SERVICE -->
-    <section class="max-w-screen-2xl m-auto">
+    <section class="max-w-screen-2xl hidden m-auto">
         <div class="container mx-auto">
             <h2 class="font-bold text-3xl text-center">Tất cả tính năng của nền tảng HR toàn diện</h2>
             <ul class="flex gap-3 justify-center my-20">
@@ -68,7 +68,7 @@
     </section>
 
     <!-- SECTION FEATURE -->
-    <section class="main-feature-section max-w-screen-2xl m-auto">
+    <section class="main-feature-section hidden max-w-screen-2xl m-auto">
         <div class="container m-auto pt-[120px]">
             <h2 class="font-bold text-3xl text-center">Thành công của doanh nghiệp phụ thuộc vào chiến lược nhân sự</h2>
             <h3 class="text-center mt-6 text-[18px]">Tanca hỗ trợ doanh nghiệp theo dõi toàn diện sự phát triển sự nghiệp của nhân viên.</h3>
@@ -127,7 +127,7 @@
     </section>
 
     <!-- SECTION SOLUTION -->
-    <section class="bg-white">
+    <section class="bg-white hidden">
         <div class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto py-24">
             <h2 class="text-[24px] text-center leading-[35px] md:text-[30px] md:leading-[55px]">Tạo giải pháp phù hợp với doanh nghiệp của bạn</h2>
             <h3 class="text-center mt-6 text-[18px]">Tanca đã hỗ trợ 30 ngành kinh doanh.</h3>
@@ -189,7 +189,7 @@
     </section>
 
     <!-- SECTION APPROVE -->
-    <section class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto py-24">
+    <section class="max-w-screen-xl hidden 2xl:max-w-screen-2xl m-auto py-24">
         <h2 class="text-[24px] text-center leading-[35px] md:text-[30px] md:leading-[55px]">Được công nhận bởi các tổ chức chuyên nghiệp</h2>
         <h3 class="text-center mt-6 text-[18px]">Nền tảng HR Tech tốt nhất Châu Á</h3>
         <div class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto bg-gray-100 flex flex-col md:flex-row p-10 mt-10">
@@ -235,7 +235,7 @@
     <section>
 
     <!-- SECTON QUESTION -->
-    <section class="max-w-screen-xl 2xl:max-w-screen-xl m-auto py-20 flex flex-col md:flex-row">
+    <section class="max-w-screen-xl hidden 2xl:max-w-screen-xl m-auto py-20 flex flex-col md:flex-row">
         <div class="grid grid-cols-2 gap-20">
             <div>
                 <h2 class="font-bold text-[30px] px-3 text-left leading-[38px] md:text-[30px] md:leading-[55px]">Tìm câu trả lời bạn cần</h2>
