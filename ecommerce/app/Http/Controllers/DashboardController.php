@@ -33,6 +33,21 @@ class Service {
     }
 }
 
+class FeatureRecommendOption {
+    public string $title;
+    public string $icon;
+    public string $description;
+
+    public $status = false;
+
+    public function __construct($title, $icon, $description, $status = false) {
+        $this->title = $title;
+        $this->icon = $icon;
+        $this->description = $description;
+        $this->status = $status;
+    }
+}
+
 class FeatureRecommend {
 
     public string $title;
@@ -95,8 +110,8 @@ class DashboardController extends Controller {
     public function index() {
 
         // try {
-        //     $path_origin = "assets/images/sections/feature/cards/leave-management.png";
-        //     $path_optimize = "assets/images_optimize/sections/feature/cards/leave-management.png";
+        //     $path_origin = "assets/images/icons/dmca_protected_sml_120m.png";
+        //     $path_optimize = "assets/images_optimize/icons/dmca_protected_sml_120m.png";
 
         //     $source = \Tinify\fromFile($path_origin);
         //     $source->toFile($path_optimize);
@@ -134,13 +149,51 @@ class DashboardController extends Controller {
                     new FeatureRecommend(
                         "Tìm kiếm Nhân tài",
                         "Tìm kiếm nhân sự phù hợp", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/leave-management.png"
                     ),
                     new FeatureRecommend(
                         "Quyền lợi nhân viên",
                         "Chấm công & tính lương toàn diện", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
                     ),
                 ]
