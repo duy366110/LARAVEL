@@ -41,13 +41,12 @@ class DashboardController extends Controller {
 
     public function index() {
         $origins_path = [
-            "assets/images/flags/flag-vi.png",
-            "assets/images/flags/flag-en.png",
+            "assets/images/logo-tanca-white.png",
         ];
 
         try {
-            $path_origin = "assets/images/flags/flag-en.png";
-            $path_optimize = "assets/images_optimize/flags/flag-en.png";
+            $path_origin = "assets/images/logo-tanca-white.png";
+            $path_optimize = "assets/images_optimize/logo-tanca-white.png";
 
             $source = \Tinify\fromFile($path_origin);
             $source->toFile($path_optimize);

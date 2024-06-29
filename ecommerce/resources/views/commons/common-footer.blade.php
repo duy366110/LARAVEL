@@ -4,22 +4,22 @@
             <div class="footer-infor-company">
                 <div>
                     <a href="#">
-                        <img class="h-10" src="{{asset("assets/images/logo-tanca-white.png")}}" alt="logo company">
+                        <img class="h-10" src="{{asset("assets/images_optimize/logo-tanca-white.png")}}" alt="logo company">
                     </a>
                     <p class="text-md my-3">Nền tảng quản lý nhân sự mạnh mẽ</p>
                 </div>
 
                 <div>
                     <a class="hover:opacity-60" href="#">
-                        <img class="w-[170px]" src="{{asset("assets/images/icons/white-CHplay.png")}}" alt="icon flatform"/>
+                        <img class="w-[170px]" src="{{asset("assets/images_optimize/icons/white-CHplay.png")}}" alt="icon flatform"/>
                     </a>
 
                     <a class="hover:opacity-60" href="#">
-                        <img class="w-[170px] my-2" src="{{asset("assets/images/icons/white-Applestore.png")}}" alt="icon flatform"/>
+                        <img class="w-[170px] my-2" src="{{asset("assets/images_optimize/icons/white-Applestore.png")}}" alt="icon flatform"/>
                     </a>
 
                     <a class="hover:opacity-60" href="#">
-                        <img class="w-[170px]" src="{{asset("assets/images/icons/white-apk.png")}}" alt="icon flatform"/>
+                        <img class="w-[170px]" src="{{asset("assets/images_optimize/icons/white-apk.png")}}" alt="icon flatform"/>
                     </a>
                 </div>
             </div>
