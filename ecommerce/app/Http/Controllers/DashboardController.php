@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Tinify\Tinify;
 
 class Service {
     public string $title;
@@ -24,7 +25,23 @@ class Rating {
 
 class DashboardController extends Controller {
 
+    public $tinify_service = null;
+
+    public function __construct() { }
+
     public function index() {
+
+        // try {
+        //     $path_origin = "assets/images/banners/bg-green-homepage.png";
+        //     $path_optimize = "assets/images_optimize/banners/bg-green-homepage.png";
+
+        //     $source = \Tinify\fromFile($path_origin);
+        //     $source->toFile($path_optimize);
+
+        // } catch (Tinify\Exception $e) {
+        //     echo $e->getMessage();
+        // }
+
         $services = [
             new Service("Tuyển dụng", "assets/images/icons/icon-hiring.png"),
             new Service("Đào tạo", "assets/images/icons/icon-learning.png"),
