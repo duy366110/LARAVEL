@@ -33,6 +33,34 @@ class Service {
     }
 }
 
+class FeatureRecommend {
+
+    public string $title;
+    public string $sub_title;
+    public $options = [];
+    public string $banner;
+
+    public function __construct($title, $sub_title, $options, $banner) {
+        $this->title = $title;
+        $this->sub_title = $sub_title;
+        $this->options = $options;
+        $this->banner = $banner;
+    }
+}
+
+class Feature {
+    public string $title;
+    public string $icon;
+    public string $banner;
+    public $recommends = [];
+    public function __construct($title, $icon, $banner, $recommends) {
+        $this->title = $title;
+        $this->icon = $icon;
+        $this->banner = $banner;
+        $this->recommends = $recommends;
+    }
+}
+
 class SolutionContet {
     public string $flag;
     public string $title;
@@ -67,8 +95,8 @@ class DashboardController extends Controller {
     public function index() {
 
         // try {
-        //     $path_origin = "assets/images/sections/solution/y-te-va-suc-khoe.webp";
-        //     $path_optimize = "assets/images_optimize/sections/solution/y-te-va-suc-khoe.webp";
+        //     $path_origin = "assets/images/sections/feature/cards/leave-management.png";
+        //     $path_optimize = "assets/images_optimize/sections/feature/cards/leave-management.png";
 
         //     $source = \Tinify\fromFile($path_origin);
         //     $source->toFile($path_optimize);
@@ -97,6 +125,103 @@ class DashboardController extends Controller {
             new Service("OKR-KPI", "assets/images_optimize/icons/icon-bao-cao-dong.png"),
         ];
 
+        $features = [
+            new Feature(
+                "Tìm kiếm nhân tài",
+                "assets/images_optimize/icons/icon-tab-talent-aquistion.svg",
+                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                [
+                    new FeatureRecommend(
+                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm nhân sự phù hợp", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/leave-management.png"
+                    ),
+                    new FeatureRecommend(
+                        "Quyền lợi nhân viên",
+                        "Chấm công & tính lương toàn diện", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
+                    ),
+                ]
+            ),
+            new Feature(
+                "Quyền lợi nhân viên",
+                "assets/images_optimize/icons/icon-tab-benefits.svg",
+                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                [
+                    new FeatureRecommend(
+                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm nhân sự phù hợp", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/leave-management.png"
+                    ),
+                    new FeatureRecommend(
+                        "Quyền lợi nhân viên",
+                        "Chấm công & tính lương toàn diện", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
+                    ),
+                ]
+            ),
+            new Feature(
+                "Quản lý nhân tài",
+                "assets/images_optimize/icons/icon-tab-talent-management.svg",
+                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                [
+                    new FeatureRecommend(
+                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm nhân sự phù hợp", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/leave-management.png"
+                    ),
+                    new FeatureRecommend(
+                        "Quyền lợi nhân viên",
+                        "Chấm công & tính lương toàn diện", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
+                    ),
+                ]
+            ),
+            new Feature(
+                "Thúc đẩy hiệu suất",
+                "assets/images_optimize/icons/icon-tab-performance.svg",
+                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                [
+                    new FeatureRecommend(
+                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm nhân sự phù hợp", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/leave-management.png"
+                    ),
+                    new FeatureRecommend(
+                        "Quyền lợi nhân viên",
+                        "Chấm công & tính lương toàn diện", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
+                    ),
+                ]
+            ),
+            new Feature(
+                "Quản lý nguồn lực",
+                "assets/images_optimize/icons/icon-tab-workforce.svg",
+                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                [
+                    new FeatureRecommend(
+                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm nhân sự phù hợp", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/leave-management.png"
+                    ),
+                    new FeatureRecommend(
+                        "Quyền lợi nhân viên",
+                        "Chấm công & tính lương toàn diện", 
+                        [],
+                        "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
+                    ),
+                ]
+            ),
+        ];
 
         $ratings = [
             new Rating("assets/images_optimize/logos/companys/logo-vinamilk.png"),
@@ -263,6 +388,7 @@ class DashboardController extends Controller {
 
         return view("dashboard.dashboard-en", [
             'languages' => $languages,
+            'features' => $features,
             'ratings' => $ratings,
             'services' => $services,
             'solutions' => $solutions,
