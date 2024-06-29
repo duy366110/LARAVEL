@@ -84,115 +84,58 @@
                             </button>
                         </li>
                     @endforeach
-
-                    {{-- <li class="feature-tab-item">
-                        <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
-                            <img src="{{asset("assets/images/icons/icon-tab-benefits.svg")}}" alt="tanca icon" />
-                            <span>Quyền lợi nhân viên</span>
-                        </button>
-                    </li> --}}
-
-                    {{-- <li class="feature-tab-item">
-                        <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
-                            <img src="{{asset("assets/images/icons/icon-tab-talent-management.svg")}}" alt="tanca icon" />
-                            <span>Quản lý nhân tài</span>
-                        </button>
-                    </li> --}}
-
-                    {{-- <li class="feature-tab-item">
-                        <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
-                            <img src="{{asset("assets/images/icons/icon-tab-performance.svg")}}" alt="tanca icon" />
-                            <span>Thúc đẩy hiệu suất</span>
-                        </button>
-                    </li> --}}
-
-                    {{-- <li class="feature-tab-item">
-                        <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
-                            <img src="{{asset("assets/images/icons/icon-tab-workforce.svg")}}" alt="tanca icon" />
-                            <span>Quản lý nguồn lực</span>
-                        </button>
-                    </li> --}}
-
                 </ul>
-                <div class="feature-contents py-20">
-                    <div class="feature-content-banner">
-                        <img src="{{asset("assets/images/sections/feature/banners/tab-talent-aquisition.png")}}" alt="tanca banner" />
-                    </div>
+                <div class="feature-wrapper-content">
 
-                    <div class="feature-content-card flex justify-between px-0 md:py-10 h-full">
-                        <div class="fcc-infor md:w-[35%]">
-                            <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Tìm kiếm Nhân tài</h2>
-                            <p class="font-normal text-md md:text-lg leading-6">Tìm kiếm nhân sự phù hợp</p>
-                            <a class="common-btn common-normal-btn block my-5 py-3 px-10" href="#">Khám phá</a>
-                            <ul>
-                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer shadow-xl">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon">
-                                        <span>Sàng lọc hồ sơ bằng AI</span>
-                                    </h2>
-                                    <p>Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                </li>
+                    @foreach($features as $feature)
+                        <div class="feature-contents py-20 {{$loop->first? '' : 'hidden'}}">
+                            <div class="feature-content-banner">
+                                <img src="{{asset($feature->banner)}}" alt="tanca banner" />
+                            </div>
 
-                                <li class="order-0 group p-4 my-2 cursor-pointer">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-employees-onboarding.svg")}}" alt="tanca icon">
-                                        <span>Hội nhập nhân viên</span>
-                                    </h2>
-                                    <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                </li>
+                            @foreach($feature->recommends as $recommend)
+                                <div class="{{$loop->iteration % 2 != 0 ? '' : 'flex-row-reverse'}} feature-content-card flex justify-between px-0 md:py-10 h-full">
+                                    <div class="fcc-infor md:w-[35%]">
+                                        <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Tìm kiếm Nhân tài</h2>
+                                        <p class="font-normal text-md md:text-lg leading-6">Tìm kiếm nhân sự phù hợp</p>
+                                        <a class="common-btn common-normal-btn block my-5 py-3 px-10" href="#">Khám phá</a>
+                                        <ul>
+                                            <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer shadow-xl">
+                                                <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
+                                                    {{-- <img src="{{asset("assets/images/icons/icon-screen-cvs-by-ai.svg")}}" alt="tanca icon"> --}}
+                                                    <span>Sàng lọc hồ sơ bằng AI</span>
+                                                </h2>
+                                                <p>Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
+                                            </li>
 
-                                <li class="order-0 group p-4 my-2 cursor-pointer">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-hiring-workflow-automation.svg")}}" alt="tanca icon">
-                                        <span>Tự động hoá quy trình</span>
-                                    </h2>
-                                    <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                </li>
-                            </ul>
+                                            <li class="order-0 group p-4 my-2 cursor-pointer">
+                                                <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
+                                                    {{-- <img src="{{asset("assets/images/icons/icon-employees-onboarding.svg")}}" alt="tanca icon"> --}}
+                                                    <span>Hội nhập nhân viên</span>
+                                                </h2>
+                                                <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
+                                            </li>
+
+                                            <li class="order-0 group p-4 my-2 cursor-pointer">
+                                                <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
+                                                    {{-- <img src="{{asset("assets/images/icons/icon-hiring-workflow-automation.svg")}}" alt="tanca icon"> --}}
+                                                    <span>Tự động hoá quy trình</span>
+                                                </h2>
+                                                <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="fcc-image h-full w-full md:w-[60%] overflow-hidden hidden md:block">
+                                        <img class="object-cover object-center h-full rounded-xl" src="{{asset($recommend->banner)}}" alt="tanca card" />
+                                    </div>
+                                </div>
+                            @endforeach
+
                         </div>
-                        <div class="fcc-image h-full w-full md:w-[60%] overflow-hidden hidden md:block">
-                            <img class="object-cover object-center h-full rounded-xl" src="{{asset("assets/images/sections/feature/cards/employees-onboarding.png")}}" alt="tanca card" />
-                        </div>
-                    </div>
-
-                    
-                    <div class="feature-content-card flex flex-row-reverse justify-between px-0 md:py-10 h-full">
-                        <div class="fcc-infor md:w-[35%]">
-                            <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Quyền lợi nhân viên</h2>
-                            <p class="font-normal text-md md:text-lg leading-6">Chấm công & tính lương toàn diện</p>
-                            <a class="common-btn common-normal-btn block my-5 py-3 px-10" href="#">Khám phá</a>
-                            <ul>
-                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-multi-method-time-tracking.svg")}}" alt="tanca icon">
-                                        <span>Chấm công đa cách thức</span>
-                                    </h2>
-                                    <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                </li>
-
-                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer shadow-xl">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-automatic-payroll-system.svg")}}" alt="tanca icon">
-                                        <span>Hệ thống tính lương linh động</span>
-                                    </h2>
-                                    <p class="block">Hệ thống tính lương tự động cho phép các công ty trả lương cho nhân viên của mình một cách chính xác và đúng hạn mà không cần tính toán thủ công.</p>
-                                </li>
-
-                                <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer">
-                                    <h2 class="font-semibold text-xl leading-7 mb-4 hover:opacity-80 flex gap-5">
-                                        <img src="{{asset("assets/images/icons/icon-leave-management.svg")}}" alt="tanca icon">
-                                        <span>Quản lý nghỉ phép</span>
-                                    </h2>
-                                    <p class="hidden">Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="fcc-image h-full w-full md:w-[60%] overflow-hidden hidden md:block">
-                            <img class="object-cover object-center h-full rounded-xl" src="{{asset("assets/images/sections/feature/cards/leave-management.png")}}" alt="tanca card" />
-                        </div>
-                    </div>
+                    @endforeach
 
                 </div>
+
             </div>
         </div>
     </section>
