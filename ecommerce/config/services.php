@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    "tinify" => [
+        "key" => env("TINYPING_API_KEY"),
+    ],
+
 ];
