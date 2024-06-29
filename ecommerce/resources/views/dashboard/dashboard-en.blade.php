@@ -201,60 +201,80 @@
             <h3 class="text-center mt-6 text-[18px]">Tanca đã hỗ trợ 30 ngành kinh doanh.</h3>
             <div class="flex flex-col sm:flex-row border-2 border-[#ecf9f2] rounded-xl overflow-hidden mt-10">
                 <ul class="solution-tabs flex flex-col  bg-[#ecf9f2] px-8 py-4">
-                    <li><button class="st-active w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Chuỗi F&B</button></li>
+                    {{-- <li><button class="st-active w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Chuỗi F&B</button></li>
                     <li><button class="w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Sản xuất</button></li>
                     <li><button class="w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Xây dựng</button></li>
                     <li><button class="w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Giáo dục</button></li>
                     <li><button class="w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Y tế & Sưc khoẻ</button></li>
-                    <li><button class="w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Công nghệ</button></li>
+                    <li><button class="w-fit md:w-[200px] 2xl:w-[270px] px-2 py-2 md:px-0 md:py-5 rounded-lg my-1 md:my-4 text-center text-sm 2xl:text-lg bg-white inline-flex md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary aria-selected:text-white aria-selected:relative dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300">Công nghệ</button></li> --}}
+
+                    @foreach($solutions as $solution)
+                        <li>
+                            <button
+                                class="
+                                    {{ $loop->first ? 'st-active' : '' }}
+                                    w-fit md:w-[200px] 2xl:w-[270px]
+                                    px-2 py-2 md:px-0 md:py-5 rounded-lg
+                                    my-1 md:my-4 text-center text-sm
+                                    2xl:text-lg bg-white inline-flex
+                                    md:block mr-1 md:mr-0 aria-selected:bg-green-light-primary
+                                    aria-selected:text-white aria-selected:relative
+                                    dark:border-transparent text-gray-500
+                                    hover:text-gray-600 dark:text-gray-400 border-gray-100
+                                    hover:border-gray-300 dark:border-gray-700
+                                    dark:hover:text-gray-300">{{$solution->tab}}</button></li>
+                    @endforeach
                 </ul>
 
                 <ul class="solution-contents">
-                    <li class="flex gap-5 flex flex-col md:flex-row p-10 h-full">
-                        <div class="solution-content-description flex-1 h-full bg-white">
-                            <table class="mb-5">
-                                <tbody>
-                                    <tr>
-                                        <td class="scd-td-pointer align-top">
-                                            <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">Tính năng 1</p>
-                                        </td>
-                                        <td>
-                                            <h4 class="font-bold text-[15px]">Xếp lịch đơn giản</h4>
-                                            <p class="my-3">Tanca giúp bạn sắp xếp các vị trí và thời gian làm việc trong các cửa hàng một cách linh hoạt nhất. Bạn có thể tối ưu hóa chi phí bằng việc quản lý lịch chi tiết của nhân viên phục vụ, đầu bếp, tài xế giao hàng. Chỉ mất vài phút hàng tuần để quản lý lịch làm việc chi tiết và logic.</p>
-                                        </td>
-                                    </tr>
+                    @foreach($solutions as $solution)
+                        <li class="{{$loop->first? '': 'hidden'}} flex gap-5 flex flex-col md:flex-row p-10 h-full">
+                            <div class="solution-content-description flex-1 h-full bg-white">
+                                <table class="mb-5">
+                                    <tbody>
+                                        <tr>
+                                            <td class="scd-td-pointer align-top">
+                                                <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">Tính năng 1</p>
+                                            </td>
+                                            <td>
+                                                <h4 class="font-bold text-[15px]">Xếp lịch đơn giản</h4>
+                                                <p class="my-3">Tanca giúp bạn sắp xếp các vị trí và thời gian làm việc trong các cửa hàng một cách linh hoạt nhất. Bạn có thể tối ưu hóa chi phí bằng việc quản lý lịch chi tiết của nhân viên phục vụ, đầu bếp, tài xế giao hàng. Chỉ mất vài phút hàng tuần để quản lý lịch làm việc chi tiết và logic.</p>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="scd-td-pointer align-top">
-                                            <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">Tính năng 2</p>
-                                        </td>
-                                        <td>
-                                            <h4 class="font-bold text-[15px]">Chấm công điện thoại</h4>
-                                            <p class="my-3">Chỉ cần điện thoại thông minh, mọi nhân viên có thể chấm công trên thiết bị của họ. Việc chấm công trở nên đơn giản hơn với phương pháp định vị vị trí GPS hay kết nối hệ thống Wifi của cửa hàng.</p>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td class="scd-td-pointer align-top">
+                                                <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">Tính năng 2</p>
+                                            </td>
+                                            <td>
+                                                <h4 class="font-bold text-[15px]">Chấm công điện thoại</h4>
+                                                <p class="my-3">Chỉ cần điện thoại thông minh, mọi nhân viên có thể chấm công trên thiết bị của họ. Việc chấm công trở nên đơn giản hơn với phương pháp định vị vị trí GPS hay kết nối hệ thống Wifi của cửa hàng.</p>
+                                            </td>
+                                        </tr>
 
-                                    <tr>
-                                        <td class="scd-td-pointer align-top">
-                                            <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">Tính năng 3</p>
-                                        </td>
-                                        <td>
-                                            <h4 class="font-bold text-[15px]">Truyền thông nội bộ</h4>
-                                            <p class="my-3">Ban bố các quy định về an toàn thực phẩm, các tài liệu hướng dẫn cách nấu hay pha chế, hoặc công bố các chương trình khuyến mãi khách hàng… Tất cả đều được thực hiện dễ dàng trên cả ứng dụng và nền tảng Web.</p>
-                                        </td>
-                                    </tr>
+                                        <tr>
+                                            <td class="scd-td-pointer align-top">
+                                                <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">Tính năng 3</p>
+                                            </td>
+                                            <td>
+                                                <h4 class="font-bold text-[15px]">Truyền thông nội bộ</h4>
+                                                <p class="my-3">Ban bố các quy định về an toàn thực phẩm, các tài liệu hướng dẫn cách nấu hay pha chế, hoặc công bố các chương trình khuyến mãi khách hàng… Tất cả đều được thực hiện dễ dàng trên cả ứng dụng và nền tảng Web.</p>
+                                            </td>
+                                        </tr>
 
-                                </tbody>
-                            </table>
+                                    </tbody>
+                                </table>
 
-                            <div class="flex justify-center">
-                                <a class="common-btn common-normal-btn py-3 px-4" href="#">Xem thêm</a>
+                                <div class="flex justify-center">
+                                    <a class="common-btn common-normal-btn py-3 px-4" href="#">Xem thêm</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="h-full w-full md:w-[40%] md:ml-10 overflow-hidden">
-                            <img class="solution-content-banner object-cover object-center h-full rounded-xl" src="{{asset("assets/images/sections/solution/chuoi-f&b.webp")}}" alt="solution banner" />
-                        </div>
-                    </li>
+                            <div class="h-full w-full md:w-[40%] md:ml-10 overflow-hidden">
+                                <img class="solution-content-banner object-cover object-center h-full rounded-xl" src="{{asset($solution->image)}}" alt="solution banner" />
+                            </div>
+                        </li>
+                    @endforeach
+
                 </ul>
             </div>
         </div>

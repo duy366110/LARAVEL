@@ -112,7 +112,48 @@ class DashboardController extends Controller {
         ];
 
         $solutions = [
+            new Solution(
+                "Chuỗi F&B",
+                "assets/images_optimize/sections/solution/chuoi-f&b.webp",
+                [
 
+                ]
+            ),
+            new Solution(
+                "Sản xuất",
+                "assets/images_optimize/sections/solution/san-xuat.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Xây dựng",
+                "assets/images_optimize/sections/solution/xay-dung-va-bds.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Giáo dục",
+                "assets/images_optimize/sections/solution/giao-duc.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Y tế & Sưc khoẻ",
+                "assets/images_optimize/sections/solution/y-te-va-suc-khoe.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Công nghệ",
+                "assets/images_optimize/sections/solution/cong-nghe.webp",
+                [
+                    
+                ]
+            ),
         ];
 
         return view("dashboard.dashboard-en", [
