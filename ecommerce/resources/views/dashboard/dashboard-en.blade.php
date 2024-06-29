@@ -67,7 +67,7 @@
     </section>
 
     <!-- SECTION FEATURE -->
-    <section class="main-feature-section hidden max-w-screen-2xl m-auto">
+    <section class="main-feature-section max-w-screen-2xl m-auto">
         <div class="container m-auto pt-[120px]">
             <h2 class="font-bold text-3xl text-center">Thành công của doanh nghiệp phụ thuộc vào chiến lược nhân sự</h2>
             <h3 class="text-center mt-6 text-[18px]">Tanca hỗ trợ doanh nghiệp theo dõi toàn diện sự phát triển sự nghiệp của nhân viên.</h3>
@@ -76,7 +76,7 @@
                 <ul class="feature-tabs border-b border-gray-200 mt-20 flex flex-wrap gap-5 justify-center">
 
                     @foreach($features as $feature)
-                        <li class="feature-tab-item">
+                        <li class="mr-[2px]">
                             <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
                                 <img src="{{asset($feature->icon)}}" alt="tanca icon" />
                                 <span>{{$feature->title}}</span>
@@ -93,7 +93,7 @@
                             </div>
 
                             @foreach($feature->recommends as $recommend)
-                                <div class="{{$loop->iteration % 2 != 0 ? '' : 'flex-row-reverse'}} feature-content-card flex justify-between px-0 md:py-10 h-full">
+                                <div class="{{$loop->iteration % 2 != 0 ? 'md:flex-row' : 'md:flex-row-reverse'}} flex-col feature-content-card flex justify-between px-10 md:px-5 py-10 h-full">
                                     <div class="fcc-infor md:w-[35%]">
                                         <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Tìm kiếm Nhân tài</h2>
                                         <p class="font-normal text-md md:text-lg leading-6">Tìm kiếm nhân sự phù hợp</p>
@@ -110,7 +110,7 @@
                                             @endforeach
                                         </ul>
                                     </div>
-                                    <div class="fcc-image h-full w-full md:w-[60%] overflow-hidden hidden md:block">
+                                    <div class="fcc-image h-full w-full md:w-[60%] overflow-hidden md:block">
                                         <img class="object-cover object-center h-full rounded-xl" src="{{asset($recommend->banner)}}" alt="tanca card" />
                                     </div>
                                 </div>
