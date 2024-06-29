@@ -33,6 +33,31 @@ class Service {
     }
 }
 
+class SolutionContet {
+    public string $flag;
+    public string $title;
+    public string $content;
+
+    public function __construct($flag, $title, $content) {
+        $this->flag = $flag;
+        $this->title = $title;
+        $this->content = $content;
+    }
+}
+
+class Solution {
+    public string $tab;
+    public $image;
+    public $items = [];
+
+    public function __construct($tab, $image, $items) {
+        $this->tab = $tab;
+        $this->image = $image;
+        $this->items = $items;
+    }
+
+}
+
 class DashboardController extends Controller {
 
     public $tinify_service = null;
@@ -40,20 +65,17 @@ class DashboardController extends Controller {
     public function __construct() { }
 
     public function index() {
-        $origins_path = [
-            "assets/images/logo-tanca-white.png",
-        ];
 
-        try {
-            $path_origin = "assets/images/logo-tanca-white.png";
-            $path_optimize = "assets/images_optimize/logo-tanca-white.png";
+        // try {
+        //     $path_origin = "assets/images/sections/solution/y-te-va-suc-khoe.webp";
+        //     $path_optimize = "assets/images_optimize/sections/solution/y-te-va-suc-khoe.webp";
 
-            $source = \Tinify\fromFile($path_origin);
-            $source->toFile($path_optimize);
+        //     $source = \Tinify\fromFile($path_origin);
+        //     $source->toFile($path_optimize);
 
-        } catch (Tinify\Exception $e) {
-            echo $e->getMessage();
-        }
+        // } catch (Tinify\Exception $e) {
+        //     echo $e->getMessage();
+        // }
 
         $languages = [
             new Language("Tiếng việt", "assets/images_optimize/flags/flag-vi.png"),
@@ -89,10 +111,56 @@ class DashboardController extends Controller {
             new Rating("assets/images_optimize/logos/companys/logo-vieON.png"),
         ];
 
+        $solutions = [
+            new Solution(
+                "Chuỗi F&B",
+                "assets/images_optimize/sections/solution/chuoi-f&b.webp",
+                [
+
+                ]
+            ),
+            new Solution(
+                "Sản xuất",
+                "assets/images_optimize/sections/solution/san-xuat.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Xây dựng",
+                "assets/images_optimize/sections/solution/xay-dung-va-bds.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Giáo dục",
+                "assets/images_optimize/sections/solution/giao-duc.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Y tế & Sưc khoẻ",
+                "assets/images_optimize/sections/solution/y-te-va-suc-khoe.webp",
+                [
+                    
+                ]
+            ),
+            new Solution(
+                "Công nghệ",
+                "assets/images_optimize/sections/solution/cong-nghe.webp",
+                [
+                    
+                ]
+            ),
+        ];
+
         return view("dashboard.dashboard-en", [
             'languages' => $languages,
             'ratings' => $ratings,
             'services' => $services,
+            'solutions' => $solutions,
         ]);
     }
 }
