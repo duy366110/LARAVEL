@@ -13,6 +13,10 @@
 }
 
 /* HEADER MERA MENU */
+.header-menu-title {
+    font-size: 1.15rem!important;
+}
+
 .header-navigation>li {
     display: flex;
     align-items: center;
@@ -20,22 +24,21 @@
 }
 
 .header-mera-menu {
+    background-color: white;
     animation: meramenudown .5s ease forwards;
     background-color: white;
     left: 0%;
     position: absolute;
     transition: all .5s ease;
     width: 100%;
+    z-index: 1000;
 }
 
 .header-navigation li:hover .header-mera-menu {
     display: grid;
 }
 
-.header-title-parent {
-    font-size: 1.15rem!important;
-}
-
+/* LANGUAGE */
 .header-language-icon-down {
     color: #cccccc;
 }
@@ -63,4 +66,13 @@
     to {
         top: 70px;
     }
+}
+
+@media screen and (max-width: 820px) {
+    .header-navigation>li {
+        margin-right: 15px;
+    }
+    /* .header-language {
+        padding-bottom: 15px;
+    } */
 }
