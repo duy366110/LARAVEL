@@ -1,6 +1,6 @@
 <div class="common-header-component">
     <header class="header-wrapper bg-white">
-        <nav class="mx-auto max-w-7xl flex md:flex-wrap gap-3 md:gap-0 items-center justify-between md:justify-start py-3 md:py-0 px-6 lg:px-8" aria-label="Global">
+        <nav class="mx-auto max-w-7xl flex md:flex-wrap gap-3 md:gap-0 items-center justify-between md:justify-start py-6 md:py-0 px-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-none mr-0 md:mr-10">
             <a href="{{route('home')}}" class="-m-1.5 p-1.5">
               <img class="h-8 w-auto" src="{{asset("assets/images_optimize/logo_tanca.svg")}}" alt="tanca logo" />
@@ -176,4 +176,7 @@
           </div>
         </nav>
       </header>
+
+      <!-- HEADER MOBILE -->
+      @include("commons.common-header-mobile")
 </div>
