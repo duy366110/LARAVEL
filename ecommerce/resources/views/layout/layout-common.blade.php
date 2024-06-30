@@ -26,7 +26,6 @@
         </div>
 
         @yield('footer')
-        <script src="{{asset("assets/js/commons/common-header.js")}}"></script>
         @yield('custom-js')
     </body>
 </html>

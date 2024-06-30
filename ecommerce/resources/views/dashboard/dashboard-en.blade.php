@@ -312,5 +312,5 @@
 @endsection
 
 @section('custom-js')
-    <script defer src="{{asset("assets/js/sections/dashboard.js")}}"></script>
+    <script src="{{asset("assets/js/sections/dashboard.js")}}"></script>
 @endsection
