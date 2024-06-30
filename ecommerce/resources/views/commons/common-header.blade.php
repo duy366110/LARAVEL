@@ -1,6 +1,6 @@
 <div class="common-header-component">
     <header class="header-wrapper bg-white">
-        <nav class="mx-auto flex max-w-7xl items-center justify-start p-6 lg:px-8" aria-label="Global">
+        <nav class="mx-auto flex max-w-7xl items-center justify-start px-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-none mr-10">
             <a href="{{route('home')}}" class="-m-1.5 p-1.5">
               <img class="h-8 w-auto" src="{{asset("assets/images_optimize/logo_tanca.svg")}}" alt="tanca logo" />
@@ -8,7 +8,7 @@
           </div>
 
           <!-- NAVIGATION -->
-          <ul class="header-navigation hidden lg:flex justify-start lg:gap-x-5 mr-auto">
+          <ul class="header-navigation hidden lg:flex items-stretch justify-start lg:gap-x-5 mr-auto">
             <li>
               <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">
                 <span>Sản phẩm</span>

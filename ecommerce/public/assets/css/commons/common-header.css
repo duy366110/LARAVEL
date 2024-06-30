@@ -5,7 +5,7 @@
 .header-wrapper {
     box-shadow: 0px 0px 1px 1px #0000001f;
     left: 0px;
-    height: 85px;
+    /* height: 85px; */
     position: fixed;
     top: 0px;
     width: 100%;
@@ -13,7 +13,14 @@
 }
 
 /* HEADER MERA MENU */
+.header-navigation>li {
+    display: flex;
+    align-items: center;
+    height: 85px;
+}
+
 .header-mera-menu {
+    animation: meramenudown .5s ease forwards;
     background-color: white;
     left: 0%;
     position: absolute;
@@ -47,4 +54,13 @@
 
 .language-items li a:hover {
     background-color: #f0f0f0;
+}
+
+@keyframes meramenudown {
+    from {
+        top: 40px;
+    }
+    to {
+        top: 70px;
+    }
 }
