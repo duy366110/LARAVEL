@@ -92,11 +92,13 @@ class Solution {
     public string $tab;
     public $image;
     public $items = [];
+    public string $id;
 
-    public function __construct($tab, $image, $items) {
+    public function __construct($tab, $image, $items, $id) {
         $this->tab = $tab;
         $this->image = $image;
         $this->items = $items;
+        $this->id = $id;
     }
 
 }
@@ -309,7 +311,8 @@ class DashboardController extends Controller {
                         "Truyền thông nội bộ",
                         "Ban bố các quy định về an toàn thực phẩm, các tài liệu hướng dẫn cách nấu hay pha chế, hoặc công bố các chương trình khuyến mãi khách hàng… Tất cả đều được thực hiện dễ dàng trên cả ứng dụng và nền tảng Web."
                     ),
-                ]
+                ],
+                "FB"
             ),
             new Solution(
                 "Chuỗi Bán lẻ",
@@ -330,7 +333,8 @@ class DashboardController extends Controller {
                         "Tính lương tự động",
                         "Luật pháp ở mỗi quốc gia khác nhau, do vậy Tanca tính toán ra thời gian đơn giản nhất để bạn tích hợp vào các hệ thống lương của quốc gia mình. Mọi dữ liệu đúng theo chuẩn của ngành khách sạn hay dịch vụ."
                     ),
-                ]
+                ],
+                "CBL"
             ),
             new Solution(
                 "Sản xuất",
@@ -351,7 +355,8 @@ class DashboardController extends Controller {
                         "TTính lương tự động",
                         "Thay vì phải mất vài giờ, vài ngày để thực hiện công việc tính lương hàng tháng, Tanca sẽ thực hiện công việc này hoàn toàn tự động. Không có sự can thiệp của con người nên thông tin hoàn toàn chính xác."
                     ),
-                ]
+                ],
+                "SX"
             ),
             new Solution(
                 "Xây dựng",
@@ -372,7 +377,8 @@ class DashboardController extends Controller {
                         "Giao và kiểm soát công việc",
                         "Lập kế hoạch các công việc cần thực hiện tại công trường và các công việc phối hợp trong nhóm. Đánh giá tình trạng hoàn thành và các vấn đề cần giải quyết. Với Tanca, mọi nhân viên quản lý công việc một cách dễ dàng và thuận tiện."
                     ),
-                ]
+                ],
+                "XD"
             ),
             new Solution(
                 "Giáo dục",
@@ -393,7 +399,8 @@ class DashboardController extends Controller {
                         "Tính toán lương chính xác",
                         "Quy định của mỗi trường là khác nhau, vì vậy Tanca tính toán thời điểm dễ dàng nhất để bạn hòa nhập vào hệ thống lương của quốc gia mình. Tất cả dữ liệu đều tuân theo tiêu chuẩn chính xác."
                     ),
-                ]
+                ],
+                "GD"
             ),
             new Solution(
                 "Y tế & Sưc khoẻ",
@@ -414,7 +421,8 @@ class DashboardController extends Controller {
                         "Quản lý dữ liệu bảo mật",
                         "Dữ liệu nhân viên được số hóa và theo dõi trên hệ thống giúp quản lý nhân viên hiệu quả hơn, giảm thiểu công việc giấy tờ và các công việc lặp đi lặp lại tốn thời gian."
                     ),
-                ]
+                ],
+                "YTSK"
             ),
             new Solution(
                 "Công nghệ",
@@ -435,7 +443,8 @@ class DashboardController extends Controller {
                         "Giao việc và kiểm soát",
                         "Lên các công việc cần làm tại nhà khách hàng và các đầu việc phối hợp đội nhóm. Đánh giá tình trạng hoàn thành và các vấn đề cần giải quyết. Với Tanca mọi nhân viên quản lý các đầu việc dễ dàng và tiện lợi."
                     ),
-                ]
+                ],
+                "CN"
             ),
         ];
 
