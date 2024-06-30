@@ -19,6 +19,10 @@
     width: calc(100% /5);
 }
 
+.f-active {
+    border-bottom: 2px solid #d1d5db;
+}
+
 .feature-tab-item button img {
     margin-right: 5px;
 }

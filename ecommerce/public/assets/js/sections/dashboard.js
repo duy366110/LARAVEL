@@ -33,6 +33,44 @@ window.onload = function(event) {
     });
 
     /**
+     * SECTION FEATURE
+     */
+
+    let featureBtnTabs = $$('.f-btn-tab');
+    let endFeatureBtnTab = featureBtnTabs[featureBtnTabs.length - 1].dataset.id;
+
+    let siderFeatureTab = setInterval(() => {
+        let currentId = '';
+
+        for(let i = 0; i<featureBtnTabs.length; i++) {
+            if(featureBtnTabs[i].classList.contains('f-active')) {
+                currentId = featureBtnTabs[i].dataset.id;
+            }
+        }
+
+        if(currentId == endFeatureBtnTab) {
+            featureBtnTabs.forEach((btnElm) => {
+                btnElm.classList.remove('f-active');
+            })
+
+            featureBtnTabs[0].classList.add('f-active');
+
+        } else {
+
+            for(let i = 0; i<featureBtnTabs.length; i++) {
+                if(featureBtnTabs[i].classList.contains('f-active')) {
+                    if((i+1) < featureBtnTabs.length) {
+                        featureBtnTabs[(i+1)-1].classList.remove('f-active');
+                        featureBtnTabs[i+1].classList.add('f-active');
+                        break
+                    }
+                }
+            }
+        }
+
+    }, 4500)
+
+    /**
      * SECTION SOLUTION
      */
 

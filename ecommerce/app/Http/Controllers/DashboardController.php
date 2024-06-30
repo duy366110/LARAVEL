@@ -64,11 +64,13 @@ class FeatureRecommend {
 }
 
 class Feature {
+    public string $id;
     public string $title;
     public string $icon;
     public string $banner;
     public $recommends = [];
-    public function __construct($title, $icon, $banner, $recommends) {
+    public function __construct($id, $title, $icon, $banner, $recommends) {
+        $this->id = $id;
         $this->title = $title;
         $this->icon = $icon;
         $this->banner = $banner;
@@ -156,6 +158,7 @@ class DashboardController extends Controller {
 
         $features = [
             new Feature(
+                "TKNT",
                 "Tìm kiếm nhân tài",
                 "assets/images_optimize/icons/icon-tab-talent-aquistion.svg",
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
@@ -213,6 +216,7 @@ class DashboardController extends Controller {
                 ]
             ),
             new Feature(
+                "QLNV",
                 "Quyền lợi nhân viên",
                 "assets/images_optimize/icons/icon-tab-benefits.svg",
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
@@ -232,6 +236,7 @@ class DashboardController extends Controller {
                 ]
             ),
             new Feature(
+                "QLNT",
                 "Quản lý nhân tài",
                 "assets/images_optimize/icons/icon-tab-talent-management.svg",
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
@@ -251,6 +256,7 @@ class DashboardController extends Controller {
                 ]
             ),
             new Feature(
+                "TDHS",
                 "Thúc đẩy hiệu suất",
                 "assets/images_optimize/icons/icon-tab-performance.svg",
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
@@ -270,6 +276,7 @@ class DashboardController extends Controller {
                 ]
             ),
             new Feature(
+                "QLNL",
                 "Quản lý nguồn lực",
                 "assets/images_optimize/icons/icon-tab-workforce.svg",
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
