@@ -103,6 +103,18 @@ class Solution {
 
 }
 
+class Question {
+    public string $id;
+    public string $title;
+    public $contents = [];
+
+    public function __construct($id, $title, $contents) {
+        $this->id = $id;
+        $this->title = $title;
+        $this->contents = $contents;
+    }
+}
+
 class DashboardController extends Controller {
 
     public $tinify_service = null;
@@ -448,12 +460,45 @@ class DashboardController extends Controller {
             ),
         ];
 
+        $questions = [
+            new Question(
+                "question-01",
+                "Tanca dùng để làm gì?",
+                [
+                    "Tanca quản lý toàn bộ vòng đời của nhân viên từ họ được tuyển dụng vào công ty cho đến khi họ nghỉ việc. Tanca là giải pháp lý tưởng cho các doanh nghiệp muốn chuyển đổi số việc quản lý nhân sự giúp công ty tăng trưởng vượt trội.",
+                    "Tanca gồm 12 nhóm tính năng giải quyết 4 bài toán từ Quản lý dữ liệu nhân sự, Đào tạo và nâng cao năng lực cho nhân viên, Quản lý lợi ích và xây dựng văn hóa làm việc theo hiệu suất."
+                ]
+            ),
+            new Question(
+                "question-02",
+                "Tanca có miễn phí không?",
+                [
+                    "Tanca cung cấp một loạt các gói dịch vụ để đáp ứng nhu cầu của các tổ chức khác nhau. Gói khởi đầu của Tanca hoàn toàn miễn phí, phù hợp với các nhóm có tối đa 25 người dùng. Đối với các nhóm lớn hơn hoặc những nhu cầu nâng cao hơn các gói khác sẽ hỗ trợ nhu cầu cho họ. Thông tin chi tiết và các ưu đãi cụ thể của từng gói có thể được tìm thấy trực tiếp trên trang web định giá của chúng tôi.",
+                ]
+            ),
+            new Question(
+                "question-03",
+                "Ai sở hữu Tanca?",
+                [
+                    "Tanca được sở hữu và phát triển bởi công ty Tanca Global. Chúng tôi tự hào là nhà cung cấp nền tảng quản lý nhân sự hàng đầu tại Châu Á, với công nghệ tiên tiến và hiện đại. Tanca được thiết kế để giải quyết các thách thức trong quản lý nhân sự, giúp các doanh nghiệp có thể quản lý lịch làm việc, chấm công và xếp ca một cách hiệu quả. Được hơn 57.000 không gian làm việc trên toàn thế giới tin tưởng sử dụng, chúng tôi cam kết mang lại giải pháp quản lý nhân sự hiệu quả và bảo mật.",
+                ]
+            ),
+            new Question(
+                "question-04",
+                "An toàn và bảo mật?",
+                [
+                    "Về mặt an toàn và bảo mật, Tanca cam kết bảo vệ thông tin cá nhân và dữ liệu của người dùng là ưu tiên hàng đầu. Nền tảng của chúng tôi cung cấp các tính năng bảo mật toàn diện, bảo vệ dữ liệu từ cấp độ vật lý đến ứng dụng, đảm bảo tính minh bạch và an toàn cho người dùng. Tanca liên tục cập nhật và nâng cao các biện pháp bảo mật để người dùng có thể yên tâm khi sử dụng các dịch vụ của chúng tôi.",
+                ]
+            ),
+        ];
+
         return view("dashboard.dashboard-en", [
             'languages' => $languages,
             'features' => $features,
             'ratings' => $ratings,
             'services' => $services,
             'solutions' => $solutions,
+            'questions' => $questions,
         ]);
     }
 }

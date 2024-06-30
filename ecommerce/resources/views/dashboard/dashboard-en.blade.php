@@ -241,46 +241,19 @@
             <div>
                 <h2 class="font-bold text-[30px] px-3 text-left leading-[38px] md:text-[30px] md:leading-[55px]">Tìm câu trả lời bạn cần</h2>
                 <ul>
-                    <li class="border-b-2">
-                        <button class="hover:bg-gray-100 w-full flex justify-between align-center px-4 py-7">
-                            <span>Tanca dùng để làm gì?</span>
-                            <i class="fa fa-plus" aria-hidden="true"></i>
-                        </button>
-                        <div class="overflow-visible h-auto px-4 pb-7">
-                            <p class="font-normal text-md md:text-lg">Tanca quản lý toàn bộ vòng đời của nhân viên từ họ được tuyển dụng vào công ty cho đến khi họ nghỉ việc. Tanca là giải pháp lý tưởng cho các doanh nghiệp muốn chuyển đổi số việc quản lý nhân sự giúp công ty tăng trưởng vượt trội.</p>
-                            <p class="font-normal text-md md:text-lg">Tanca gồm 12 nhóm tính năng giải quyết 4 bài toán từ Quản lý dữ liệu nhân sự, Đào tạo và nâng cao năng lực cho nhân viên, Quản lý lợi ích và xây dựng văn hóa làm việc theo hiệu suất.</p>
-                        </div>
-                    </li>
-
-                    <li class="border-b-2">
-                        <button class="hover:bg-gray-100 w-full flex justify-between align-center px-4 py-7">
-                            <span>Tanca có miễn phí không?</span>
-                            <i class="fa fa-plus" aria-hidden="true"></i>
-                        </button>
-                        <div class="overflow-hidden h-0 px-4">
-                            <p class="font-normal text-md md:text-lg">Tanca cung cấp một loạt các gói dịch vụ để đáp ứng nhu cầu của các tổ chức khác nhau. Gói khởi đầu của Tanca hoàn toàn miễn phí, phù hợp với các nhóm có tối đa 25 người dùng. Đối với các nhóm lớn hơn hoặc những nhu cầu nâng cao hơn các gói khác sẽ hỗ trợ nhu cầu cho họ. Thông tin chi tiết và các ưu đãi cụ thể của từng gói có thể được tìm thấy trực tiếp trên trang web định giá của chúng tôi.</p>
-                        </div>
-                    </li>
-
-                    <li class="border-b-2">
-                        <button class="hover:bg-gray-100 w-full flex justify-between align-center px-4 py-7">
-                            <span>Ai sở hữu Tanca?</span>
-                            <i class="fa fa-plus" aria-hidden="true"></i>
-                        </button>
-                        <div class="overflow-hidden h-0 px-4">
-                            <p class="font-normal text-md md:text-lg">Tanca được sở hữu và phát triển bởi công ty Tanca Global. Chúng tôi tự hào là nhà cung cấp nền tảng quản lý nhân sự hàng đầu tại Châu Á, với công nghệ tiên tiến và hiện đại. Tanca được thiết kế để giải quyết các thách thức trong quản lý nhân sự, giúp các doanh nghiệp có thể quản lý lịch làm việc, chấm công và xếp ca một cách hiệu quả. Được hơn 57.000 không gian làm việc trên toàn thế giới tin tưởng sử dụng, chúng tôi cam kết mang lại giải pháp quản lý nhân sự hiệu quả và bảo mật.</p>
-                        </div>
-                    </li>
-
-                    <li class="border-b-2">
-                        <button class="hover:bg-gray-100 w-full flex justify-between align-center px-4 py-7">
-                            <span>An toàn và bảo mật</span>
-                            <i class="fa fa-plus" aria-hidden="true"></i>
-                        </button>
-                        <div class="overflow-hidden h-0 px-4">
-                            <p class="font-normal text-md md:text-lg">Về mặt an toàn và bảo mật, Tanca cam kết bảo vệ thông tin cá nhân và dữ liệu của người dùng là ưu tiên hàng đầu. Nền tảng của chúng tôi cung cấp các tính năng bảo mật toàn diện, bảo vệ dữ liệu từ cấp độ vật lý đến ứng dụng, đảm bảo tính minh bạch và an toàn cho người dùng. Tanca liên tục cập nhật và nâng cao các biện pháp bảo mật để người dùng có thể yên tâm khi sử dụng các dịch vụ của chúng tôi.</p>
-                        </div>
-                    </li>
+                    @foreach($questions as $question)
+                        <li data-id="{{$question->id}}" class="question-item border-b-2">
+                            <button class="hover:bg-gray-100 w-full flex justify-between align-center px-4 py-7">
+                                <span>{{$question->title}}</span>
+                                <i class="fa fa-plus" aria-hidden="true"></i>
+                            </button>
+                            <div id="{{$question->id}}" class="hidden h-auto px-4 pb-7">
+                                @foreach($question->contents as $content)
+                                    <p class="font-normal text-md md:text-lg">{{$content}}</p>
+                                @endforeach
+                            </div>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
 
