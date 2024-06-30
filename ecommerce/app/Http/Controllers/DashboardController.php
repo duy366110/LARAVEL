@@ -164,11 +164,11 @@ class DashboardController extends Controller {
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
                 [
                     new FeatureRecommend(
-                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm Nhân tài S1",
                         "Tìm kiếm nhân sự phù hợp", 
                         [
                             new FeatureRecommendOption(
-                                "Sàng lọc hồ sơ bằng AI",
+                                "Sàng lọc hồ sơ bằng AI S1",
                                 "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
                                 "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
                                 true
@@ -189,11 +189,11 @@ class DashboardController extends Controller {
                         "assets/images_optimize/sections/feature/cards/leave-management.png"
                     ),
                     new FeatureRecommend(
-                        "Quyền lợi nhân viên",
+                        "Quyền lợi nhân viên S1",
                         "Chấm công & tính lương toàn diện", 
                         [
                             new FeatureRecommendOption(
-                                "Sàng lọc hồ sơ bằng AI",
+                                "Sàng lọc hồ sơ bằng AI S1",
                                 "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
                                 "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
                                 false
@@ -222,15 +222,53 @@ class DashboardController extends Controller {
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
                 [
                     new FeatureRecommend(
-                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm Nhân tài S2",
                         "Tìm kiếm nhân sự phù hợp", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI S2",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/leave-management.png"
                     ),
                     new FeatureRecommend(
-                        "Quyền lợi nhân viên",
+                        "Quyền lợi nhân viên S2",
                         "Chấm công & tính lương toàn diện", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
                     ),
                 ]
@@ -242,15 +280,53 @@ class DashboardController extends Controller {
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
                 [
                     new FeatureRecommend(
-                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm Nhân tài S3",
                         "Tìm kiếm nhân sự phù hợp", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI S3",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/leave-management.png"
                     ),
                     new FeatureRecommend(
-                        "Quyền lợi nhân viên",
+                        "Quyền lợi nhân viên S3",
                         "Chấm công & tính lương toàn diện", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
                     ),
                 ]
@@ -262,15 +338,53 @@ class DashboardController extends Controller {
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
                 [
                     new FeatureRecommend(
-                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm Nhân tài S4",
                         "Tìm kiếm nhân sự phù hợp", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI S4",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/leave-management.png"
                     ),
                     new FeatureRecommend(
-                        "Quyền lợi nhân viên",
+                        "Quyền lợi nhân viên S4",
                         "Chấm công & tính lương toàn diện", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
                     ),
                 ]
@@ -282,15 +396,53 @@ class DashboardController extends Controller {
                 "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
                 [
                     new FeatureRecommend(
-                        "Tìm kiếm Nhân tài",
+                        "Tìm kiếm Nhân tài S5",
                         "Tìm kiếm nhân sự phù hợp", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI S5",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/leave-management.png"
                     ),
                     new FeatureRecommend(
-                        "Quyền lợi nhân viên",
+                        "Quyền lợi nhân viên S5",
                         "Chấm công & tính lương toàn diện", 
-                        [],
+                        [
+                            new FeatureRecommendOption(
+                                "Sàng lọc hồ sơ bằng AI",
+                                "assets/images_optimize/icons/icon-screen-cvs-by-ai.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                            new FeatureRecommendOption(
+                                "Hội nhập nhân viên",
+                                "assets/images_optimize/icons/icon-employees-onboarding.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                true
+                            ),
+                            new FeatureRecommendOption(
+                                "Tự động hoá quy trình",
+                                "assets/images_optimize/icons/icon-hiring-workflow-automation.svg",
+                                "Sàng lọc CV bằng công nghệ AI để chọn lọc những ứng viên đủ tiêu chuẩn nhất cho công việc",
+                                false
+                            ),
+                        ],
                         "assets/images_optimize/sections/feature/cards/employees-onboarding.png"
                     ),
                 ]
