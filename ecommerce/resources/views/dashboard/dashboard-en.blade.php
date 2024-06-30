@@ -234,8 +234,8 @@
     <section>
 
     <!-- SECTON QUESTION -->
-    <section class="max-w-screen-xl hidden 2xl:max-w-screen-xl m-auto py-20 flex flex-col md:flex-row">
-        <div class="grid grid-cols-2 gap-20">
+    <section class="max-w-screen-xl 2xl:max-w-screen-xl m-auto py-20 flex flex-col md:flex-row">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
             <div>
                 <h2 class="font-bold text-[30px] px-3 text-left leading-[38px] md:text-[30px] md:leading-[55px]">Tìm câu trả lời bạn cần</h2>
                 <ul>
@@ -282,7 +282,7 @@
                 </ul>
             </div>
 
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-10 md:gap-5">
                 <div class="p-9 bg-[#F5F9FF] rounded-xl">
                     <h2 class="font-bold text-[18px]">Đặt lịch tư vấn</h2>
                     <p class="my-5 font-normal text-md md:text-lg">Chúng tôi có thể hỗ trợ đội ngũ nhân sự của bạn như thế nào?</p>

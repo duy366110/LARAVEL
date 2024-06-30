@@ -1,6 +1,6 @@
-<footer class="common-footer-component pt-8 hidden">
+<footer class="common-footer-component pt-8">
     <div class="footer-content container mx-auto">
-        <div class="flex gap-5">
+        <div class="flex gap-5 flex-col md:flex-row px-4">
             <div class="footer-infor-company">
                 <div>
                     <a href="#">
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="footer-infor-menu">
-                <ul class="grid grid-cols-4 gap-4">
+                <ul class="grid grid-cols-1 md:grid-cols-4 gap-4">
                     <li>
                         <div>
                             <h2 class="mb-6 font-extrabold text-xl/[30px] uppercase leading-7 text-[#FF8D23]">Công ty</h2>
@@ -166,9 +166,9 @@
         </div>
     </div>
 
-    <div class="footer-coppy-right border-t-[1px] py-5 mt-10">
+    <div class="footer-coppy-right border-t-[1px] py-5 px-4 mt-10">
         <div class="container mx-auto">
-            <div class="flex flex-row justify-between gap-4">
+            <div class="flex flex-row flex-wrap justify-between gap-3 lg:gap-4">
                 <div>
                     <a href="#">Language</a>
                 </div>
