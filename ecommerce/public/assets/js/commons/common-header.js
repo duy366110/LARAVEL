@@ -11,16 +11,22 @@ window.onload = function(event) {
     
     btnToggleMobileHeader.addEventListener("click", (event) => {
         headerMobile.classList.toggle('hidden');
-        console.log(headerMeraWrapper);
     })
 
     headerMobileMask.addEventListener("click", (event) => {
         headerMobile.classList.add("hidden");
     })
 
-    headerMeraWrapper.forEach((itemHeaderMera) => {
+    headerMeraWrapper.forEach((itemHeaderMera, index, origin) => {
         itemHeaderMera.addEventListener("click", function(event) {
-            console.log(this);
+            origin.forEach((originHeaderMeraWrapper) => {
+                let groupHeaderMera = originHeaderMeraWrapper.querySelector(".header-mera-menu-mobile");
+                if(groupHeaderMera) {
+                    groupHeaderMera.classList.add("hidden");
+                }
+            })
+
+            this.querySelector(".header-mera-menu-mobile").classList.remove("hidden");
         })
     });
 }
