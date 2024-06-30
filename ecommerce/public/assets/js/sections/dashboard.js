@@ -37,7 +37,10 @@ window.onload = function(event) {
      */
 
     let featureBtnTabs = $$('.f-btn-tab');
+    let featureContents = $$('.feature-contents');
     let endFeatureBtnTab = featureBtnTabs[featureBtnTabs.length - 1].dataset.id;
+
+    console.log(featureContents);
 
     let siderFeatureTab = setInterval(() => {
         let currentId = '';
@@ -53,15 +56,25 @@ window.onload = function(event) {
                 btnElm.classList.remove('f-active');
             })
 
+            featureContents.forEach((featureContent) => {
+                featureContent.classList.add('hidden');
+            })
+
             featureBtnTabs[0].classList.add('f-active');
+            featureContents[0].classList.remove('hidden');
 
         } else {
+
+            featureContents.forEach((featureContent) => {
+                featureContent.classList.add('hidden');
+            })
 
             for(let i = 0; i<featureBtnTabs.length; i++) {
                 if(featureBtnTabs[i].classList.contains('f-active')) {
                     if((i+1) < featureBtnTabs.length) {
                         featureBtnTabs[(i+1)-1].classList.remove('f-active');
                         featureBtnTabs[i+1].classList.add('f-active');
+                        $(`#${featureBtnTabs[i+1].dataset.id}`).classList.remove('hidden');
                         break
                     }
                 }

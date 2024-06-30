@@ -87,7 +87,7 @@
                 <div class="feature-wrapper-content">
 
                     @foreach($features as $feature)
-                        <div class="feature-contents py-20 {{$loop->first? '' : 'hidden'}}">
+                        <div id="{{$feature->id}}" class="feature-contents py-20 {{$loop->first? '' : 'hidden'}}">
                             <div class="feature-content-banner">
                                 <img src="{{asset($feature->banner)}}" alt="tanca banner" />
                             </div>
