@@ -135,8 +135,10 @@
                     @foreach($solutions as $solution)
                         <li>
                             <button
+                                data-id="{{$solution->id}}"
                                 class="
                                     {{ $loop->first ? 'st-active' : '' }}
+                                    solution-tab-item-btn
                                     w-fit md:w-[200px] 2xl:w-[270px]
                                     px-2 py-2 md:px-0 md:py-5 rounded-lg
                                     my-1 md:my-4 text-center text-sm
@@ -150,9 +152,9 @@
                     @endforeach
                 </ul>
 
-                <ul class="solution-contents">
+                <ul id="solution-contents" class="solution-contents">
                     @foreach($solutions as $solution)
-                        <li class="{{$loop->iteration == 2? '': 'hidden'}} flex gap-5 flex flex-col md:flex-row p-10 h-full">
+                        <li id="{{$solution->id}}" class="{{$loop->first? '': 'hidden'}} flex gap-5 flex flex-col md:flex-row p-10 h-full">
                             <div class="solution-content-description flex-1 h-full bg-white">
                                 <table class="mb-5">
                                     <tbody>
@@ -307,4 +309,8 @@
 
 @section('footer')
     @include("commons.common-footer")
+@endsection
+
+@section('custom-js')
+    <script src="{{asset("assets/js/sections/dashboard.js")}}"></script>
 @endsection

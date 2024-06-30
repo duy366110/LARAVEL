@@ -26,5 +26,6 @@
         </div>
 
         @yield('footer')
+        @yield('custom-js')
     </body>
 </html>

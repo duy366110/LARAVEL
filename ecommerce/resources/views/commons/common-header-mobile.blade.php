@@ -1,6 +1,6 @@
-<div id="header-mobile" class="header-mobile hidden fixed top-[85px] z-[1200] w-full h-[450px] overflow-y-auto">
+<div id="header-mobile" class="header-mobile hidden fixed top-[85px] z-[1200] w-full h-full">
     <div id="hm-mask" class="hm-mask absolute w-full h-full z-[-1]"></div>
-    <div class="hm-wraper absolute w-full z-[1]">
+    <div class="hm-wraper absolute w-full z-[1] h-[450px] overflow-y-auto">
         <ul class="flex flex-col p-4 md:p-0 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white ">
             <li class="header-mera-wrapper">
                 <a class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded md:w-auto hover:text-primary hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-primary-600 md:p-0 " href="#">
