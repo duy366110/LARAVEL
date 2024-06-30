@@ -77,7 +77,7 @@
 
                     @foreach($features as $feature)
                         <li class="mr-[2px]">
-                            <button class="inline-flex items-center justify-center p-2 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0 border-transparent">
+                            <button data-id="{{$feature->id}}" class="{{$loop->first? 'f-active' : ''}} f-btn-tab inline-flex items-center justify-center p-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 group cursor-pointer font-medium text-sm md:text-lg mx-0 md:mx-0">
                                 <img src="{{asset($feature->icon)}}" alt="tanca icon" />
                                 <span>{{$feature->title}}</span>
                             </button>
