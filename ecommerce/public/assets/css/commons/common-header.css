@@ -12,6 +12,19 @@
     z-index: 1000;
 }
 
+/* HEADER MERA MENU */
+.header-mera-menu {
+    background-color: white;
+    left: 0%;
+    position: absolute;
+    transition: all .5s ease;
+    width: 100%;
+}
+
+.header-navigation li:hover .header-mera-menu {
+    display: grid;
+}
+
 .header-title-parent {
     font-size: 1.15rem!important;
 }
