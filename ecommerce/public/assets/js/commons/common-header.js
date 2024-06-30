@@ -7,7 +7,6 @@ window.onload = function(event) {
     let headerMobileMask = $("#hm-mask");
 
     let headerMeraWrapper = $$(".header-mera-wrapper");
-
     
     btnToggleMobileHeader.addEventListener("click", (event) => {
         headerMobile.classList.toggle('hidden');
@@ -25,8 +24,9 @@ window.onload = function(event) {
                     groupHeaderMera.classList.add("hidden");
                 }
             })
-
-            this.querySelector(".header-mera-menu-mobile").classList.remove("hidden");
+            if(this.querySelector(".header-mera-menu-mobile")) {
+                this.querySelector(".header-mera-menu-mobile").classList.remove("hidden");
+            }
         })
     });
 }
