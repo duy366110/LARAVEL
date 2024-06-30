@@ -97,7 +97,7 @@
                                     <div class="fcc-infor md:w-[35%]">
                                         <h2 class="font-bold text-[24px] md:text-[28px] leading-10">Tìm kiếm Nhân tài</h2>
                                         <p class="font-normal text-md md:text-lg leading-6">Tìm kiếm nhân sự phù hợp</p>
-                                        <a class="common-btn common-normal-btn block my-5 py-3 px-10" href="#">Khám phá</a>
+                                        <a class="common-btn common-normal-btn block my-5 py-3 px-10 w-[250px] text-center" href="#">Khám phá</a>
                                         <ul>
                                             @foreach($recommend->options as $option)
                                                 <li class="order-0 group p-4 my-2 rounded-2xl cursor-pointer {{$option->status? 'shadow-xl' : ''}}">
@@ -126,12 +126,12 @@
     </section>
 
     <!-- SECTION SOLUTION -->
-    <section class="bg-white hidden">
+    <section class="bg-white">
         <div class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto py-24">
             <h2 class="text-[24px] text-center leading-[35px] md:text-[30px] md:leading-[55px]">Tạo giải pháp phù hợp với doanh nghiệp của bạn</h2>
             <h3 class="text-center mt-6 text-[18px]">Tanca đã hỗ trợ 30 ngành kinh doanh.</h3>
             <div class="flex flex-col sm:flex-row border-2 border-[#ecf9f2] rounded-xl overflow-hidden mt-10">
-                <ul class="solution-tabs flex flex-col  bg-[#ecf9f2] px-8 py-4">
+                <ul class="solution-tabs flex flex-row md:flex-col flex-wrap bg-[#ecf9f2] px-8 py-4">
                     @foreach($solutions as $solution)
                         <li>
                             <button
@@ -159,7 +159,7 @@
 
                                         @foreach($solution->items as $item)
                                             <tr>
-                                                <td class="scd-td-pointer align-top">
+                                                <td class="scd-td-pointer align-top hidden md:block">
                                                     <p class="border border-[#1ecc78] rounded-full mr-3 px-1 py-1 text-center text-[15px] text-[#1ecc78]">{{$item->flag}}</p>
                                                 </td>
                                                 <td>
@@ -172,7 +172,7 @@
                                     </tbody>
                                 </table>
 
-                                <div class="flex justify-center">
+                                <div class="flex flex-start md:justify-center">
                                     <a class="common-btn common-normal-btn py-3 px-4" href="#">Xem thêm</a>
                                 </div>
                             </div>
@@ -188,13 +188,13 @@
     </section>
 
     <!-- SECTION APPROVE -->
-    <section class="max-w-screen-xl hidden 2xl:max-w-screen-2xl m-auto py-24">
+    <section class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto py-24">
         <h2 class="text-[24px] text-center leading-[35px] md:text-[30px] md:leading-[55px]">Được công nhận bởi các tổ chức chuyên nghiệp</h2>
         <h3 class="text-center mt-6 text-[18px]">Nền tảng HR Tech tốt nhất Châu Á</h3>
         <div class="max-w-screen-xl 2xl:max-w-screen-2xl m-auto bg-gray-100 flex flex-col md:flex-row p-10 mt-10">
-            <div class="w-full flex">
+            <div class="w-full flex flex-col md:flex-row">
                 <div class="p-2 mb-20 md:mb-0 md:p-10">
-                    <img src="{{asset("assets/images/certificate/gartner-peerinsights.svg")}}" alt="tanca certificate" />
+                    <img src="{{asset("assets/images_optimize/certificate/gartner-peerinsights.svg")}}" width="349" height="99" alt="tanca certificate" />
                     <h2 class="text-2xl font-normal">Tanca</h2>
                     <p class="mb-5 font-normal text-md md:text-lg">Cloud HCM Suites dành cho doanh nghiệp trên 1,000 nhân viên</p>
                     <p class="mb-0 text-[30px]">
@@ -207,24 +207,24 @@
                 </div>
 
                 <div class="p-2 md:p-10 pt-20 md:pt-10 md:border-grey-bf border-t md:border-t-0 md:border-l">
-                    <div class="grid grid-cols-2 gap-10">
-                        <div>
-                            <img src="{{asset("assets/images_optimize/certificate/custom-choise.svg")}}" alt="tanca certificate" />
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <div class="flex justify-center items-center flex-col">
+                            <img width="164" height="131" src="{{asset("assets/images_optimize/certificate/custom-choise.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Gartner report "Voice of the Customer" 2022</p>
                         </div>
 
-                        <div>
-                            <img src="{{asset("assets/images_optimize/certificate/software-suggest.svg")}}" alt="tanca certificate" />
+                        <div class="flex justify-center items-center flex-col">
+                            <img width="164" height="131" src="{{asset("assets/images_optimize/certificate/software-suggest.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Customers` Choice Software Recommendation Award</p>
                         </div>
 
-                        <div>
-                            <img src="{{asset("assets/images_optimize/certificate/Vendor-of-the-year-2022.svg")}}" alt="tanca certificate" />
+                        <div class="flex justify-center items-center flex-col">
+                            <img width="164" height="131" src="{{asset("assets/images_optimize/certificate/Vendor-of-the-year-2022.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Staffing Provider of the Year 2022</p>
                         </div>
 
-                        <div>
-                            <img src="{{asset("assets/images_optimize/certificate/ATS-software.svg")}}" alt="tanca certificate" />
+                        <div class="flex justify-center items-center flex-col">
+                            <img width="164" height="131" src="{{asset("assets/images_optimize/certificate/ATS-software.svg")}}" alt="tanca certificate" />
                             <p class="font-normal text-md md:text-lg">Most Trusted ATS Software Award</p>
                         </div>
                     </div>
