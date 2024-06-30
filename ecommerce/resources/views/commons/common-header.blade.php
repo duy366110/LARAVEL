@@ -14,10 +14,10 @@
                 <span>Sản phẩm</span>
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
-              <!-- MENU 01 -->
+              <!-- GROUP 01 -->
               <div class="header-mera-menu hidden grid md:grid-cols-5 p-5 shadow-inner">
                 <div class="hmm-wrapper md:col-span-4">
-                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Sản phẩm</h2>
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[14px] lg:text-[17px] text-[#ffc008] uppercase mb-5">Sản phẩm</h2>
                   <ul class="grid grid-cols-2 gap-10">
                     @for($i = 0; $i < 12; $i++)
                       <li>
@@ -40,7 +40,7 @@
                   </a>
                 </div>
               </div>
-              <!-- END MENU -->
+              <!-- END GROUP -->
             </li>
 
             <li>
@@ -48,10 +48,10 @@
                 <span>Giải pháp</span>
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
-              <!-- MENU 02 -->
+              <!-- GROUP 02 -->
               <div class="header-mera-menu hidden grid md:grid-cols-5 p-5 shadow-inner">
                 <div class="hmm-wrapper md:col-span-4">
-                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Giải pháp</h2>
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[14px] lg:text-[17px] text-[#ffc008] uppercase mb-5">Giải pháp</h2>
                   <ul class="grid grid-cols-2 gap-10">
                     @for($i = 0; $i < 12; $i++)
                       <li>
@@ -65,7 +65,7 @@
                 </div>
 
                 <div class="hmm-wrapper">
-                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Quy mô kinh doanh</h2>
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[14px] lg:text-[17px] text-[#ffc008] uppercase mb-5">Quy mô kinh doanh</h2>
                   <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
                     <div class="p-5">
                       <h2 class="font-bold">Doanh nghiệp lớn</h2>
@@ -80,7 +80,7 @@
                   </a>
                 </div>
               </div>
-              <!-- END MENU -->
+              <!-- END GROUP -->
             </li>
 
             <li><a href="#" class="header-menu-title text-sm font-semibold leading-6 text-gray-900">Thiết bị</a></li>
@@ -89,10 +89,10 @@
                 <span>Tài nguyên</span>
                 <i class="fa fa-angle-down" aria-hidden="true"></i>
               </a>
-              <!-- MENU 03 -->
+              <!-- GROUP 03 -->
               <div class="header-mera-menu hidden grid grid-cols-4 gap-5 p-5 shadow-inner">
                 <div class="hmm-wrapper">
-                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Tài nguyên</h2>
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[14px] lg:text-[17px] text-[#ffc008] uppercase mb-5">Tài nguyên</h2>
                   <ul class="grid grid-cols-1 gap-10">
                     @for($i = 0; $i < 9; $i++)
                       <li>
@@ -106,7 +106,7 @@
                 </div>
 
                 <div class="hmm-wrapper">
-                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Công ty</h2>
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[14px] lg:text-[17px] text-[#ffc008] uppercase mb-5">Công ty</h2>
                   <ul class="grid grid-cols-1 gap-10">
                     @for($i = 0; $i < 5; $i++)
                       <li>
@@ -120,7 +120,7 @@
                 </div>
 
                 <div class="hmm-wrapper">
-                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Hỗ trợ</h2>
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[14px] lg:text-[17px] text-[#ffc008] uppercase mb-5">Hỗ trợ</h2>
                   <ul class="grid grid-cols-1 gap-10">
                     @for($i = 0; $i < 3; $i++)
                       <li>
@@ -143,7 +143,7 @@
                   </a>
                 </div>
               </div>
-              <!-- END MENU -->
+              <!-- END GROUP -->
             </li>
           </ul>
           <!-- END NAVIGATION -->
