@@ -166,7 +166,7 @@
         </div>
     </div>
 
-    <div class="footer-coppy-right border-t-[1px] py-5 px-4 mt-10">
+    <div class="footer-coppy-right border-t-[1px] pt-5 pb-16 md:pb-5 px-4 mt-10">
         <div class="container mx-auto">
             <div class="flex flex-row flex-wrap justify-between gap-3 lg:gap-4">
                 <div>
@@ -186,17 +186,17 @@
 </footer>
 
 <div class="footer-tip-contact fixed left-0 right-0 bottom-0 md:left-auto md:right-[15px] md:bottom-[58px] md:rounded-full z-[50] bg-white p-2 md:divide-y divide-grey-f0 shadow-xl text-center bg-opacity-80 hover:bg-opacity-100 flex flex-row justify-around md:flex md:flex-col md:justify-around">
-    <div class="tip-contact-items cursor-pointer md:h-24 flex flex-row md:flex-col justify-center cursor-pointer hover:opacity-50">
+    <div class="tip-contact-items cursor-pointer md:h-24 flex flex-row md:flex-col items-center justify-center gap-5 md:gap-0 cursor-pointer hover:opacity-50">
         <i class="fa fa-phone" aria-hidden="true"></i>
         <p class="my-2 text-sm text-gray-600">Hỗ trợ</p>
     </div>
 
-    <div class="tip-contact-items cursor-pointer md:h-24 flex flex-row md:flex-col justify-center cursor-pointer hover:opacity-50">
+    <div class="tip-contact-items cursor-pointer md:h-24 flex flex-row md:flex-col items-center justify-center gap-5 md:gap-0 cursor-pointer hover:opacity-50">
         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
         <p class="my-2 text-sm text-gray-600">Cần tư vấn</p>
     </div>
 
-    <a href="#" class="tip-contact-items flex flex-col md:h-24 flex flex-row md:flex-col justify-center cursor-pointer hover:opacity-50">
+    <a href="#" class="tip-contact-items flex md:h-24 flex flex-row md:flex-col items-center justify-center gap-5 md:gap-0 cursor-pointer hover:opacity-50">
         <i class="fa fa-commenting" aria-hidden="true"></i>
         <p class="my-2 text-sm text-gray-600">Chat</p>
     </a>
