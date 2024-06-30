@@ -60,5 +60,12 @@ window.onload = function(event) {
      * SECTION QUESTION
      */
 
-    
+    let questions = $$(".question-item");
+    questions.forEach((question) => {
+        let { id } = question.dataset;
+
+        question.addEventListener("click", function(event) {
+            $(`#${id}`).classList.toggle("hidden");
+        })
+    })
 }
