@@ -72,5 +72,7 @@
         </div>
 
         @yield('footer')
+
+        <script src="{{asset("assets/js/commons/common-header.js")}}"></script>
     </body>
 </html>
