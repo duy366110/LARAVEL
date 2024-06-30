@@ -40,8 +40,6 @@ window.onload = function(event) {
     let featureContents = $$('.feature-contents');
     let endFeatureBtnTab = featureBtnTabs[featureBtnTabs.length - 1].dataset.id;
 
-    console.log(featureContents);
-
     let siderFeatureTab = setInterval(() => {
         let currentId = '';
 
@@ -82,6 +80,24 @@ window.onload = function(event) {
         }
 
     }, 4500)
+
+
+    featureBtnTabs.forEach((featureBtnTab, index, origin) => {
+        featureBtnTab.addEventListener("click", function(event) {
+            origin.forEach((originFeatureBtnTab) => {
+                originFeatureBtnTab.classList.remove("f-active");
+            })
+
+            featureContents.forEach((featureContent) => {
+                featureContent.classList.add('hidden');
+            })
+
+            let currentId = this.dataset.id;
+            this.classList.add('f-active');
+            $(`#${currentId}`).classList.remove('hidden');
+
+        })
+    })
 
     /**
      * SECTION SOLUTION
