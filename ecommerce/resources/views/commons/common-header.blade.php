@@ -170,7 +170,7 @@
           <!-- END LANGUAGE OPTION -->
               <a class="common-btn common-hover-btn hidden lg:block py-2 px-4" href="#">Đăng nhập</a>
               <a class="common-btn common-normal-btn hidden xl:block py-2 px-4" href="#">Dùng thử miễn phí</a>
-              <button class="btn-toggle-header-mobile bg-[#f3f4f6] md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
+              <button id="btn-toggle-header-mobile" class="btn-toggle-header-mobile bg-[#f3f4f6] md:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 ">
                 <i class="fa fa-bars" aria-hidden="true"></i>
               </button>
           </div>
