@@ -3,20 +3,150 @@
         <nav class="mx-auto flex max-w-7xl items-center justify-start p-6 lg:px-8" aria-label="Global">
           <div class="flex lg:flex-none mr-10">
             <a href="{{route('home')}}" class="-m-1.5 p-1.5">
-              <span class="sr-only">Your Company</span>
-              <img
-                class="h-8 w-auto"
-                src="{{asset("assets/images_optimize/logo_tanca.svg")}}"
-                alt="">
+              <img class="h-8 w-auto" src="{{asset("assets/images_optimize/logo_tanca.svg")}}" alt="tanca logo" />
             </a>
           </div>
 
-          <div class="hidden lg:flex justify-start lg:gap-x-5 mr-auto">
-            <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Sản phẩm</a>
-            <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Giải pháp</a>
-            <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Thiết bị</a>
-            <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Tài nguyên</a>
-          </div>
+          <!-- NAVIGATION -->
+          <ul class="header-navigation hidden lg:flex justify-start lg:gap-x-5 mr-auto">
+            <li>
+              <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">
+                <span>Sản phẩm</span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <!-- MENU 01 -->
+              <div class="header-mera-menu hidden grid md:grid-cols-5 p-5 shadow-inner">
+                <div class="hmm-wrapper md:col-span-4">
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Sản phẩm</h2>
+                  <ul class="grid grid-cols-2 gap-10">
+                    @for($i = 0; $i < 12; $i++)
+                      <li>
+                        <a class="flex items-center gap-3 font-bold" href="#">
+                          <img src="{{asset("assets/images_optimize/icons/icon-hiring.png")}}" height="40" width="40" alt="tanc icon" />
+                          <span>Tìm kiếm nhân tài</span>
+                        </a>
+                      </li>
+                    @endfor
+                  </ul>
+                </div>
+
+                <div class="hmm-wrapper">
+                  <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
+                    <img src="{{asset("/assets/images_optimize/discover-tanca.webp")}}" alt="tanca banner" />
+                    <div class="p-5">
+                      <h2 class="font-bold">Tại sap Tanca?</h2>
+                      <p>Tìm hiểu vid sao Tanca phù hợp với doanh nghiêp của bạn!</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END MENU -->
+            </li>
+
+            <li>
+              <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">
+                <span>Giải pháp</span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <!-- MENU 02 -->
+              <div class="header-mera-menu hidden grid md:grid-cols-5 p-5 shadow-inner">
+                <div class="hmm-wrapper md:col-span-4">
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Giải pháp</h2>
+                  <ul class="grid grid-cols-2 gap-10">
+                    @for($i = 0; $i < 12; $i++)
+                      <li>
+                        <a class="flex items-center gap-3 font-bold" href="#">
+                          <img src="{{asset("assets/images_optimize/icons/icon-hiring.png")}}" height="40" width="40" alt="tanc icon" />
+                          <span>Tìm kiếm nhân tài</span>
+                        </a>
+                      </li>
+                    @endfor
+                  </ul>
+                </div>
+
+                <div class="hmm-wrapper">
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Quy mô kinh doanh</h2>
+                  <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
+                    <div class="p-5">
+                      <h2 class="font-bold">Doanh nghiệp lớn</h2>
+                      <p>Dành cho các doanh nghiệp lớn với hơn 250 nhân viên, chọn phần mềm doanh nghiệp phù hợp của chúng tôi.</p>
+                    </div>
+                  </a>
+                  <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
+                    <div class="p-5">
+                      <h2 class="font-bold">Doanh nghiêph vừa và nhỏ</h2>
+                      <p>Phát triển doanh nghiệp với đầy đủ các công cụ được cung cấp để quản lý nhân sự của bạn/p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END MENU -->
+            </li>
+
+            <li><a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">Thiết bị</a></li>
+            <li>
+              <a href="#" class="header-title-parent text-sm font-semibold leading-6 text-gray-900">
+                <span>Tài nguyên</span>
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </a>
+              <!-- MENU 03 -->
+              <div class="header-mera-menu hidden grid grid-cols-4 gap-5 p-5 shadow-inner">
+                <div class="hmm-wrapper">
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Tài nguyên</h2>
+                  <ul class="grid grid-cols-1 gap-10">
+                    @for($i = 0; $i < 9; $i++)
+                      <li>
+                        <a class="flex items-center gap-3 font-bold" href="#">
+                          <img src="{{asset("assets/images_optimize/icons/icon-hiring.png")}}" height="40" width="40" alt="tanc icon" />
+                          <span>Tìm kiếm nhân tài</span>
+                        </a>
+                      </li>
+                    @endfor
+                  </ul>
+                </div>
+
+                <div class="hmm-wrapper">
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Công ty</h2>
+                  <ul class="grid grid-cols-1 gap-10">
+                    @for($i = 0; $i < 5; $i++)
+                      <li>
+                        <a class="flex items-center gap-3 font-bold" href="#">
+                          <img src="{{asset("assets/images_optimize/icons/icon-hiring.png")}}" height="40" width="40" alt="tanc icon" />
+                          <span>Tìm kiếm nhân tài</span>
+                        </a>
+                      </li>
+                    @endfor
+                  </ul>
+                </div>
+
+                <div class="hmm-wrapper">
+                  <h2 class="border-b border-gray-100 font-bold py-5 text-[#ffc008] uppercase mb-5">Hỗ trợ</h2>
+                  <ul class="grid grid-cols-1 gap-10">
+                    @for($i = 0; $i < 3; $i++)
+                      <li>
+                        <a class="flex items-center gap-3 font-bold" href="#">
+                          <img src="{{asset("assets/images_optimize/icons/icon-hiring.png")}}" height="40" width="40" alt="tanc icon" />
+                          <span>Tìm kiếm nhân tài</span>
+                        </a>
+                      </li>
+                    @endfor
+                  </ul>
+                </div>
+
+                <div class="hmm-wrapper">
+                  <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
+                    <img src="{{asset("/assets/images_optimize/customer-stories.png")}}" alt="tanca banner" />
+                    <div class="p-5">
+                      <h2 class="font-bold">Câu chuyện thành công</h2>
+                      <p>Tanca giúp doanh nghiệp đạt được thành tựu như thế nào?</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- END MENU -->
+            </li>
+          </ul>
+          <!-- END NAVIGATION -->
 
           <div class="header-language relative mr-8 hidden">
             <button class="flex items-center gap-3">
@@ -36,7 +166,7 @@
             </ul>
           </div>
 
-          <div class="header-auth hidden md:flex">
+          <div class="header-auth hidden flex">
             <a class="common-btn common-hover-btn" href="#">Đăng nhập</a>
           </div>
         </nav>
