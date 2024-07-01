@@ -126,8 +126,8 @@ class DashboardController extends Controller {
     public function index() {
 
         // try {
-        //     $path_origin = "assets/images/icons/dmca_protected_sml_120m.png";
-        //     $path_optimize = "assets/images_optimize/icons/dmca_protected_sml_120m.png";
+        //     $path_origin = "assets/images_optimize/tab-workforce-management.png";
+        //     $path_optimize = "assets/images_optimize/sections/feature/banners/tab-workforce-management.png";
 
         //     $source = \Tinify\fromFile($path_origin);
         //     $source->toFile($path_optimize);
@@ -219,7 +219,7 @@ class DashboardController extends Controller {
                 "QLNV",
                 "Quyền lợi nhân viên",
                 "assets/images_optimize/icons/icon-tab-benefits.svg",
-                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                "assets/images_optimize/sections/feature/banners/tab-benefits.png",
                 [
                     new FeatureRecommend(
                         "Tìm kiếm Nhân tài S2",
@@ -277,7 +277,7 @@ class DashboardController extends Controller {
                 "QLNT",
                 "Quản lý nhân tài",
                 "assets/images_optimize/icons/icon-tab-talent-management.svg",
-                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                "assets/images_optimize/sections/feature/banners/tab-talent-management.png",
                 [
                     new FeatureRecommend(
                         "Tìm kiếm Nhân tài S3",
@@ -335,7 +335,7 @@ class DashboardController extends Controller {
                 "TDHS",
                 "Thúc đẩy hiệu suất",
                 "assets/images_optimize/icons/icon-tab-performance.svg",
-                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                "assets/images_optimize/sections/feature/banners/tab-performance.png",
                 [
                     new FeatureRecommend(
                         "Tìm kiếm Nhân tài S4",
@@ -393,7 +393,7 @@ class DashboardController extends Controller {
                 "QLNL",
                 "Quản lý nguồn lực",
                 "assets/images_optimize/icons/icon-tab-workforce.svg",
-                "assets/images_optimize/sections/feature/banners/tab-talent-aquisition.png",
+                "assets/images_optimize/sections/feature/banners/tab-workforce-management.png",
                 [
                     new FeatureRecommend(
                         "Tìm kiếm Nhân tài S5",
