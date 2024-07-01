@@ -126,8 +126,8 @@ class DashboardController extends Controller {
     public function index() {
 
         // try {
-        //     $path_origin = "assets/images_optimize/tab-workforce-management.png";
-        //     $path_optimize = "assets/images_optimize/sections/feature/banners/tab-workforce-management.png";
+        //     $path_origin = "assets/images_optimize/discover-tanca.webp";
+        //     $path_optimize = "assets/images_optimize/sections/header/discover-tanca.webp";
 
         //     $source = \Tinify\fromFile($path_origin);
         //     $source->toFile($path_optimize);
