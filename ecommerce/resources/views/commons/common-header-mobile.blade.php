@@ -25,7 +25,7 @@
     
                     <div class="hmm-wrapper">
                       <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
-                        <img src="{{asset("/assets/images_optimize/discover-tanca.webp")}}" alt="tanca banner" />
+                        <img src="{{asset("/assets/images_optimize/sections/header/discover-tanca.webp")}}" alt="tanca banner" />
                         <div class="p-5">
                           <h2 class="font-bold">Tại sap Tanca?</h2>
                           <p>Tìm hiểu vid sao Tanca phù hợp với doanh nghiêp của bạn!</p>
@@ -133,7 +133,7 @@
     
                     <div class="hmm-wrapper">
                       <a class="m-auto flex flex-col width-full max-w-[352px] bg-[#f8f8f8] rounded-xl overflow-hidden hover:bg-[#ebebeb] mb-2" href="#">
-                        <img src="{{asset("/assets/images_optimize/customer-stories.png")}}" alt="tanca banner" />
+                        <img src="{{asset("/assets/images_optimize/sections/header/customer-stories.png")}}" alt="tanca banner" />
                         <div class="p-5">
                           <h2 class="font-bold">Câu chuyện thành công</h2>
                           <p>Tanca giúp doanh nghiệp đạt được thành tựu như thế nào?</p>

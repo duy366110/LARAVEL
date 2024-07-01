@@ -43,12 +43,21 @@ window.onload = function(event) {
     let siderFeatureTab = setInterval(() => {
         let currentId = '';
 
+        /**
+         * Tìm class f-active hiện tại đang ở đâu trong danh sách
+         */
         for(let i = 0; i<featureBtnTabs.length; i++) {
             if(featureBtnTabs[i].classList.contains('f-active')) {
                 currentId = featureBtnTabs[i].dataset.id;
             }
         }
 
+        /**
+         * Nếu class f-active đã đến phần tử cuối
+         * add class hidden cho tất cả các phần tử
+         * đặt lại cho phần tử đầu tiên
+         * và xoá class hidden của phần tử đầu tiên đi
+         */
         if(currentId == endFeatureBtnTab) {
             featureBtnTabs.forEach((btnElm) => {
                 btnElm.classList.remove('f-active');
@@ -63,16 +72,41 @@ window.onload = function(event) {
 
         } else {
 
+            /**
+             * Add class hidden cho tất cả các content phụ thuộc vào tab
+             */
             featureContents.forEach((featureContent) => {
                 featureContent.classList.add('hidden');
             })
 
             for(let i = 0; i<featureBtnTabs.length; i++) {
+
+                /**
+                 * Tìm ra phằn tử hiện tại có ladd f-active
+                 */
                 if(featureBtnTabs[i].classList.contains('f-active')) {
+                    /**
+                     * Kiểm tra vị trí của phần tử có nhỏ hơn độ dài của danh sách tabs
+                     */
                     if((i+1) < featureBtnTabs.length) {
+                        /**
+                         * Xoá class f-active của phần tử hiện tại đi
+                         */
                         featureBtnTabs[(i+1)-1].classList.remove('f-active');
+
+                        /**
+                         * Thêm class f-active cho phần tử đứng sau phần tử f-active của hiện tại
+                         */
                         featureBtnTabs[i+1].classList.add('f-active');
+
+                        /**
+                         * Hiện nội dung của content của tab tương ứng với class f-active của tab mới
+                         */
                         $(`#${featureBtnTabs[i+1].dataset.id}`).classList.remove('hidden');
+
+                        /**
+                         * Ngăn chặn chạy một lèo hết vòng lặp - chỉ chạy từng phần tử
+                         */
                         break
                     }
                 }
