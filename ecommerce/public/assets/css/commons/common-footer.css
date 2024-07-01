@@ -3,10 +3,6 @@
     color: white;
 }
 
-.footer-contact-messag {
-    background-color: #1ecc78;
-}
-
 .footer-contact-icon-phone {
     animation-name: phonerun;
     animation-duration: 2.5s;
@@ -15,15 +11,11 @@
     animation-timing-function: ease;
     transition: all .5s ease;
     font-size: 15px;
-    left: 12px;
+    left: 10px;
     top: 7px;
 }
 
 /* TIP CONTACT */
-.footer-tip-contact {
-    background-color: red;
-}
-
 .tip-contact-items > i {
     color: var(--color-3);
 }
