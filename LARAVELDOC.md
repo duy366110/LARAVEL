@@ -69,3 +69,47 @@
                         \Illuminate\Validation\ValidationException::class,
                     ];
 
+        + Folder controllers:
+            - Là nơi xử lý logic của ứng dụngkis có một yêu cầu HTTP. Controllers nhận yêu cầu từ người dùng, tương tác với model và trả các phản hồi response.
+
+            php artisan make:controller UserController
+
+        + Folder models:
+            - Model cung cấp một lớp trù tượng để tương tác với CSDL
+
+            php artisan make:model User
+
+        + Folder providers:
+            - Là các lớp chịu trách nhiệm khởi tạo - ràng buộc và cấu hình các dịch vụ của ứng dụng
+
+            Service provider là phần cốt lõi của cách laravel khởi tạo và cấu hình ứng dụng. chúng cung cấp các dịch vụ và lớp mà ứng dụng cần để hoạt động.
+
+            - Các service provider mặc định:
+                1) AppServiceProvider.php:
+                    Đây là nơi bạn có thể đăng ký bất kỳ dịch vụ nào
+
+                2) AuthServiceProvider.php:
+                    Được sử dụng để đăng ký bất kỳ chính sách xác thực
+
+                3) BroadcastServiceProvider.php:
+                    Được dùng đăng ký bất kỳ chính sách phát song nào
+
+                4) EventServiceProvider.php:
+                    Được sử dụng để đăng ký các listener và subscriber cho các sự kiện của ứng dụng
+
+                5) RoueServiceProvider.php:
+                    Chịu trách nhiệm nạp các route của ứng dụng
+
+            - Tạo service:
+                php artisan make:provider CustomServiceProvider
+
+            - Đắng ký xử dụng service:
+                Sau khi đã tạo service - bạn cần đăng ký nó để sử dụng được trong
+                config/app.php trong mảng providers:
+
+                'providers' => [
+                    // Các service providers khác...
+                    App\Providers\CustomServiceProvider::class,
+                ],
+
+
